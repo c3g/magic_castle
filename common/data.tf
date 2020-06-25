@@ -126,6 +126,25 @@ EOF
   }
 }
 
+data "template_cloudinit_config" "web_config" {
+  count = var.instances["web"]["count"]
+  part {
+    filename     = "web.yaml"
+    merge_type   = "list(append)+dict(recurse_array)+str()"
+    content_type = "text/cloud-config"
+    content      = templatefile(
+      "${path.module}/cloud-init/puppetagent.yaml",
+      {
+        node_name             = format("web%d", count.index + 1),
+        sudoer_username       = var.sudoer_username,
+        ssh_authorized_keys   = var.public_keys,
+        puppetmaster_ip       = local.puppetmaster_ip,
+        puppetmaster_password = random_string.puppetmaster_password.result,
+      }
+    )
+  }
+}
+
 data "template_cloudinit_config" "node_config" {
   for_each = local.node
   part {

@@ -12,6 +12,7 @@ variable "instances" {
   type = object({
     mgmt=object({type=string, count=number}),
     login=object({type=string, count=number}),
+    web=object({type=string, count=number}),
     node=list(map(any)),
   })
   description = "Map that defines the parameters for each type of instance of the cluster"
