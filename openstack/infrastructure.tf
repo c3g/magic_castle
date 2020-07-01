@@ -10,7 +10,7 @@ data "openstack_compute_flavor_v2" "mgmt" {
 }
 
 data "openstack_compute_flavor_v2" "web" {
-  name = var.instances["mgmt"]["type"]
+  name = var.instances["web"]["type"]
 }
 data "openstack_compute_flavor_v2" "login" {
   name = var.instances["login"]["type"]
