@@ -10,7 +10,7 @@ data "openstack_compute_flavor_v2" "mgmt" {
 }
 
 data "openstack_compute_flavor_v2" "web" {
-  name = var.instances["web"]["type"]
+  name = var.instances["login"]["type"]
 }
 data "openstack_compute_flavor_v2" "login" {
   name = var.instances["login"]["type"]
@@ -203,7 +203,7 @@ resource "openstack_compute_instance_v2" "login" {
 }
 
 resource "openstack_networking_port_v2" "port_web" {
-  count              = max(var.instances["web"]["count"], 1)
+  count              = var.web_node ? 1:0
   name               = format("%s-port-web%d", var.cluster_name, count.index + 1)
   network_id         = local.network.id
   security_group_ids = [openstack_compute_secgroup_v2.secgroup_1.id]
@@ -213,11 +213,11 @@ resource "openstack_networking_port_v2" "port_web" {
 }
 
 resource "openstack_compute_instance_v2" "web" {
-  count    = var.instances["web"]["count"]
+  count    = var.web_node ? 1:0
   name     = format("%s-web%d", var.cluster_name, count.index + 1)
   image_id = var.root_disk_size > data.openstack_compute_flavor_v2.web.disk ? null : data.openstack_images_image_v2.image.id
 
-  flavor_name     = var.instances["web"]["type"]
+  flavor_name     = var.instances["login"]["type"]
   key_pair        = openstack_compute_keypair_v2.keypair.name
   security_groups = [openstack_compute_secgroup_v2.secgroup_1.name]
   user_data       = data.template_cloudinit_config.web_config[count.index].rendered

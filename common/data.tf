@@ -127,7 +127,7 @@ EOF
 }
 
 data "template_cloudinit_config" "web_config" {
-  count = var.instances["web"]["count"]
+  count = var.web_node ? 1:0
   part {
     filename     = "web.yaml"
     merge_type   = "list(append)+dict(recurse_array)+str()"

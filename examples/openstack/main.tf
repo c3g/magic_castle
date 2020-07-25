@@ -9,23 +9,23 @@ module "openstack" {
   domain       = "calculquebec.cloud"
   image        = "CentOS-7-x64-2019-07"
   nb_users     = 10
-  puppetenv_git= "https://github.com/arshul/puppet-genpipes"
+  puppetenv_git= "https://github.com/c3g/puppet-magic_castle"
   puppetenv_rev = "web_node"
 
   instances = {
-    mgmt  = { type = "p4-4gb", count = 1 },
-    login = { type = "p1-0.75gb", count = 1 },
-    web = { type = "p1-0.75gb", count = 1 }
+    mgmt  = { type = "p4-6gb", count = 1 },
+    login = { type = "p2-3gb", count = 1 },
     node  = [
-      { type = "c2-3.75gb-92", count = 1 },
+      { type = "p2-3gb", count = 1 },
     ]
   }
+  web_node = true
 
   storage = {
     type         = "nfs"
-    home_size    = 50
-    project_size = 25
-    scratch_size = 25
+    home_size    = 100
+    project_size = 50
+    scratch_size = 50
   }
 
   public_keys = [file("~/.ssh/id_rsa.pub")]
