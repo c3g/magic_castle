@@ -19,7 +19,7 @@ module "openstack" {
       { type = "p2-3gb", count = 1 },
     ]
   }
-  web_node = true
+  web_instance = { type = "p2-3gb", count = 1 }
 
   storage = {
     type         = "nfs"

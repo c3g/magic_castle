@@ -17,12 +17,11 @@ variable "instances" {
   description = "Map that defines the parameters for each type of instance of the cluster"
 }
 
-variable "web_node" {
-  type        = bool
-  default     = false
-  description = "If set true, then an additional web node is deployed."
+variable  "web_instance" {
+  type        = object({type=string, count=number})
+  default     = { type = "p1-0.75gb",  count =  0}
+  description = "Set type and count > 0, to add an additional node with web feature."
 }
-
 variable "image" {
   type        = any
   description = "Name of the operating system image that will be used to create a boot disk for the instances"
