@@ -1,3 +1,10 @@
+resource "openstack_compute_interface_attach_v2" "ceph_network" {
+  for_each    = module.design.instances_to_build
+  instance_id = openstack_compute_instance_v2.instances[each.key].id
+  network_id  = "00b327b4-4fb2-4ed8-a7f2-6ff49e3b7e7c"
+}
+
+
 resource "openstack_networking_port_v2" "nic_ceph" {
   for_each           = module.design.instances
   name               = format("%s-%s-ceph-port", var.cluster_name, each.key)
@@ -10,14 +17,10 @@ resource "openstack_networking_port_v2" "nic_ceph" {
       for tag, value in openstack_networking_secgroup_v2.external: value.id if contains(each.value.tags, tag)
     ]
   )
-  fixed_ip {
-    subnet_id = local.subnet.id
-  }
 }
 
-
-resource "openstack_compute_interface_attach_v2" "ceph_network" {
+resource "openstack_compute_interface_attach_v2" "extra_network" {
   for_each    = module.design.instances_to_build
   instance_id = openstack_compute_instance_v2.instances[each.key].id
-  network_id  = "00b327b4-4fb2-4ed8-a7f2-6ff49e3b7e7c"
+  port_id     = "openstack_networking_port_v2.nic_ceph[each.key].id"
 }
