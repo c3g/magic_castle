@@ -1,0 +1,4983 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="design/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Magic Castle</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#magic-castle-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Magic Castle" class="md-header__button md-logo" aria-label="Magic Castle" data-md-component="logo">
+      
+  <img src="img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Magic Castle
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Magic Castle Documentation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Magic Castle" class="md-nav__button md-logo" aria-label="Magic Castle" data-md-component="logo">
+      
+  <img src="img/logo.png" alt="logo">
+
+    </a>
+    Magic Castle
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Magic Castle Documentation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Magic Castle Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-terraform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Terraform
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Authentication
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2 Authentication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-amazon-web-services-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.1 Amazon Web Services (AWS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122-google-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.2 Google Cloud
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123-microsoft-azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.3 Microsoft Azure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#124-openstack-ovh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.4 OpenStack / OVH
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-cloud-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Cloud API
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3 Cloud API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.1 AWS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132-google-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.2 Google Cloud
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#133-microsoft-azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.3 Microsoft Azure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#134-openstack-ovh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.4 OpenStack / OVH
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-quotas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Quotas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4 Quotas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.1 AWS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142-google-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.2 Google Cloud
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143-microsoft-azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.3 Microsoft Azure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#144-openstack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.4 OpenStack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#145-ovh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.5 OVH
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-cloud-cluster-architecture-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Cloud Cluster Architecture Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-initialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Initialization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Initialization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-main-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Main File
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-terraform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Terraform
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Terraform">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321-terraform-modules-upgrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.1 Terraform Modules Upgrade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 source
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-config_git_url" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 config_git_url
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-config_version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 config_version
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-cluster_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 cluster_name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 domain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 image
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.6 image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#461-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6.1 AWS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#462-microsoft-azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6.2 Microsoft Azure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#463-openstack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6.3 OpenStack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#464-incus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6.4 Incus
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47-instances" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.7 instances
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.7 instances">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#471-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.7.1 tags
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#472-optional-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.7.2 Optional attributes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.7.2 Optional attributes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AWS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Azure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GCP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Incus
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#473-post-build-modification-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.7.3 Post build modification effect
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#48-volumes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.8 volumes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#49-public_keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.9 public_keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#410-nb_users-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.10 nb_users (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#411-guest_passwd-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.11 guest_passwd (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#412-sudoer_username-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.12 sudoer_username (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#413-hieradata-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.13 hieradata (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#414-hieradata_dir-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.14 hieradata_dir (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#415-eyaml_key-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.15 eyaml_key (optional)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.15 eyaml_key (optional)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4151-generate-eyaml-encryption-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.15.1 Generate eyaml encryption keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4152-encrypting-sensitive-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.15.2 Encrypting sensitive properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4153-terraform-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.15.3 Terraform cloud
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#416-firewall_rules-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.16 firewall_rules (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#418-software_stack-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.18 software_stack (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#419-pool-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.19 pool (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#420-skip_upgrade-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.20 skip_upgrade (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#421-puppetfile-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.21 puppetfile (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422-bastion_tags-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.22 bastion_tags (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-cloud-specific-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Cloud Specific Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Cloud Specific Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-amazon-web-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Amazon Web Services
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1 Amazon Web Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#511-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.1 region
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-availability_zone-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.2 availability_zone (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-microsoft-azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Microsoft Azure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2 Microsoft Azure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2.1 location
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#522-azure_resource_group-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2.2 azure_resource_group (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#523-plan-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2.3 plan (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-google-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Google Cloud
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.3 Google Cloud">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#531-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.1 project
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#532-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.2 region
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#533-zone-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.3 zone (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-openstack-and-ovh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 OpenStack and OVH
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.4 OpenStack and OVH">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#541-os_floating_ips-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.1 os_floating_ips (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#542-os_ext_network-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.2 os_ext_network (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#544-subnet_id-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.4 subnet_id (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-incus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Incus
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.5 Incus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#forward_proxy-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        forward_proxy (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privileged-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        privileged (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared_filesystems-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        shared_filesystems (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage_pool-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        storage_pool (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network_type-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        network_type (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ovn_uplink_network-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ovn_uplink_network (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-dns-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. DNS Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. DNS Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-cloudflare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Cloudflare
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1 Cloudflare">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#612-cloudflare-api-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1.2 Cloudflare API Token
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-google-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Google Cloud
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-unsupported-providers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Unsupported providers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-sshfp-records-and-dnssec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 SSHFP records and DNSSEC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66-dkim-record-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 DKIM record (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Planning
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Planning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-scanning-plan-for-misconfiguration-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Scanning plan for misconfiguration (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Deployment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-deployment-customization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Deployment Customization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-destruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Destruction
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Destruction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-instance-destruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Instance Destruction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-instance-replacement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 Instance Replacement
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-customize-cluster-software-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Customize Cluster Software Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Customize Cluster Software Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-disable-puppet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 Disable Puppet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-replace-the-guest-account-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 Replace the Guest Account Password
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-add-ldap-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 Add LDAP Users
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.3 Add LDAP Users">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1031-hieradata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.1 hieradata
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1032-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.2 Command-Line
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1033-mokey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.3 Mokey
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#104-increase-the-number-of-guest-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4 Increase the Number of Guest Accounts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#105-restrict-ssh-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5 Restrict SSH Access
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#106-add-packages-to-jupyter-default-python-kernel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6 Add Packages to Jupyter Default Python Kernel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#107-activate-globus-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.7 Activate Globus Endpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#108-recovering-from-puppet-rebuild" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.8 Recovering from puppet rebuild
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#109-dealing-with-banned-ip-addresses-fail2ban" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9 Dealing with banned ip addresses (fail2ban)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.9 Dealing with banned ip addresses (fail2ban)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1091-define-a-list-of-ip-addresses-that-can-never-be-banned" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.1 Define a list of ip addresses that can never be banned
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1092-remove-fail2ban-ssh-route-jail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.2 Remove fail2ban ssh-route jail
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1093-unban-ip-addresses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.3 Unban ip addresses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1094-disable-fail2ban" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.4 Disable fail2ban
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1011-set-selinux-in-permissive-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.11 Set SELinux in permissive mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1012-create-a-compute-node-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.12 Create a compute node image
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.12 Create a compute node image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#10121-prepare-the-volume-for-cloning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.12.1 Prepare the volume for cloning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10122-create-the-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.12.2 Create the image
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10123-configure-magic-castle-terraform-code-to-use-the-new-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.12.3 Configure Magic Castle Terraform code to use the new image
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1013-read-and-edit-secret-values-generated-at-boot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.13 Read and edit secret values generated at boot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1014-expand-a-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.14 Expand a volume
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1015-access-prometheus-expression-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.15 Access Prometheus' expression browser
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-customize-magic-castle-terraform-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Customize Magic Castle Terraform Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="developers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Magic Castle Developer Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comparison of Cloud HPC Cluster Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sequence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Magic Castle Sequence Diagrams
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="terraform_cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terraform Cloud
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-terraform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Terraform
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Authentication
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2 Authentication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-amazon-web-services-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.1 Amazon Web Services (AWS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122-google-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.2 Google Cloud
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123-microsoft-azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.3 Microsoft Azure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#124-openstack-ovh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.4 OpenStack / OVH
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-cloud-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Cloud API
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3 Cloud API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.1 AWS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132-google-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.2 Google Cloud
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#133-microsoft-azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.3 Microsoft Azure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#134-openstack-ovh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3.4 OpenStack / OVH
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-quotas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Quotas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4 Quotas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.1 AWS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142-google-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.2 Google Cloud
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143-microsoft-azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.3 Microsoft Azure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#144-openstack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.4 OpenStack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#145-ovh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4.5 OVH
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-cloud-cluster-architecture-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Cloud Cluster Architecture Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-initialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Initialization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Initialization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-main-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Main File
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-terraform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Terraform
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Terraform">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321-terraform-modules-upgrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.1 Terraform Modules Upgrade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 source
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-config_git_url" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 config_git_url
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-config_version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 config_version
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-cluster_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 cluster_name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 domain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 image
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.6 image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#461-aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6.1 AWS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#462-microsoft-azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6.2 Microsoft Azure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#463-openstack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6.3 OpenStack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#464-incus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6.4 Incus
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47-instances" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.7 instances
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.7 instances">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#471-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.7.1 tags
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#472-optional-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.7.2 Optional attributes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.7.2 Optional attributes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AWS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Azure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GCP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Incus
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#473-post-build-modification-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.7.3 Post build modification effect
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#48-volumes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.8 volumes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#49-public_keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.9 public_keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#410-nb_users-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.10 nb_users (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#411-guest_passwd-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.11 guest_passwd (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#412-sudoer_username-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.12 sudoer_username (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#413-hieradata-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.13 hieradata (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#414-hieradata_dir-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.14 hieradata_dir (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#415-eyaml_key-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.15 eyaml_key (optional)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.15 eyaml_key (optional)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4151-generate-eyaml-encryption-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.15.1 Generate eyaml encryption keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4152-encrypting-sensitive-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.15.2 Encrypting sensitive properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4153-terraform-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.15.3 Terraform cloud
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#416-firewall_rules-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.16 firewall_rules (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#418-software_stack-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.18 software_stack (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#419-pool-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.19 pool (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#420-skip_upgrade-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.20 skip_upgrade (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#421-puppetfile-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.21 puppetfile (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422-bastion_tags-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.22 bastion_tags (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-cloud-specific-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Cloud Specific Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Cloud Specific Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-amazon-web-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Amazon Web Services
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1 Amazon Web Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#511-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.1 region
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-availability_zone-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1.2 availability_zone (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-microsoft-azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Microsoft Azure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2 Microsoft Azure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2.1 location
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#522-azure_resource_group-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2.2 azure_resource_group (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#523-plan-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2.3 plan (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-google-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Google Cloud
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.3 Google Cloud">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#531-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.1 project
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#532-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.2 region
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#533-zone-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.3 zone (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-openstack-and-ovh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 OpenStack and OVH
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.4 OpenStack and OVH">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#541-os_floating_ips-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.1 os_floating_ips (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#542-os_ext_network-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.2 os_ext_network (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#544-subnet_id-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.4 subnet_id (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-incus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Incus
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.5 Incus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#forward_proxy-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        forward_proxy (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privileged-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        privileged (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared_filesystems-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        shared_filesystems (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage_pool-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        storage_pool (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network_type-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        network_type (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ovn_uplink_network-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ovn_uplink_network (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-dns-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. DNS Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. DNS Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-cloudflare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Cloudflare
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1 Cloudflare">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#612-cloudflare-api-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1.2 Cloudflare API Token
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-google-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Google Cloud
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-unsupported-providers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Unsupported providers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-sshfp-records-and-dnssec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 SSHFP records and DNSSEC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66-dkim-record-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 DKIM record (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Planning
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Planning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-scanning-plan-for-misconfiguration-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Scanning plan for misconfiguration (optional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Deployment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-deployment-customization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Deployment Customization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-destruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Destruction
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Destruction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-instance-destruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Instance Destruction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-instance-replacement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 Instance Replacement
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-customize-cluster-software-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Customize Cluster Software Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Customize Cluster Software Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-disable-puppet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 Disable Puppet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-replace-the-guest-account-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 Replace the Guest Account Password
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-add-ldap-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 Add LDAP Users
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.3 Add LDAP Users">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1031-hieradata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.1 hieradata
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1032-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.2 Command-Line
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1033-mokey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.3 Mokey
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#104-increase-the-number-of-guest-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4 Increase the Number of Guest Accounts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#105-restrict-ssh-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5 Restrict SSH Access
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#106-add-packages-to-jupyter-default-python-kernel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6 Add Packages to Jupyter Default Python Kernel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#107-activate-globus-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.7 Activate Globus Endpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#108-recovering-from-puppet-rebuild" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.8 Recovering from puppet rebuild
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#109-dealing-with-banned-ip-addresses-fail2ban" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9 Dealing with banned ip addresses (fail2ban)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.9 Dealing with banned ip addresses (fail2ban)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1091-define-a-list-of-ip-addresses-that-can-never-be-banned" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.1 Define a list of ip addresses that can never be banned
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1092-remove-fail2ban-ssh-route-jail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.2 Remove fail2ban ssh-route jail
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1093-unban-ip-addresses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.3 Unban ip addresses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1094-disable-fail2ban" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.4 Disable fail2ban
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1011-set-selinux-in-permissive-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.11 Set SELinux in permissive mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1012-create-a-compute-node-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.12 Create a compute node image
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.12 Create a compute node image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#10121-prepare-the-volume-for-cloning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.12.1 Prepare the volume for cloning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10122-create-the-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.12.2 Create the image
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10123-configure-magic-castle-terraform-code-to-use-the-new-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.12.3 Configure Magic Castle Terraform code to use the new image
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1013-read-and-edit-secret-values-generated-at-boot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.13 Read and edit secret values generated at boot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1014-expand-a-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.14 Expand a volume
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1015-access-prometheus-expression-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.15 Access Prometheus' expression browser
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-customize-magic-castle-terraform-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Customize Magic Castle Terraform Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="magic-castle-documentation">Magic Castle Documentation</h1>
+<p><img src="img/logo.png" width="50%"/></p>
+
+<h2 id="1-setup">1. Setup</h2>
+<p>To use Magic Castle you will need:</p>
+<ol>
+<li>Terraform (&gt;= 1.5.7)</li>
+<li>Authenticated access to a cloud</li>
+<li>Ability to communicate with the cloud provider API from your computer</li>
+<li>A project with operational limits meeting the requirements described in <em>Quotas</em> subsection.</li>
+</ol>
+<h3 id="11-terraform">1.1 Terraform</h3>
+<p>To install Terraform, follow the
+<a href="https://learn.hashicorp.com/tutorials/terraform/install-cli">tutorial</a>
+or go directly on <a href="https://www.terraform.io/downloads">Terraform download page</a>.</p>
+<p>You can verify Terraform was properly installed by looking at the version in a terminal:
+<div class="highlight"><pre><span></span><code>terraform version
+</code></pre></div></p>
+<h3 id="12-authentication">1.2 Authentication</h3>
+<h4 id="121-amazon-web-services-aws">1.2.1 Amazon Web Services (AWS)</h4>
+<!-- markdown-link-check-disable -->
+<ol>
+<li>Go to <a href="https://console.aws.amazon.com/iam/home?#/security_credentials">AWS - My Security Credentials</a></li>
+<li>Create a new access key.</li>
+<li>In a terminal, export <code>AWS_ACCESS_KEY_ID</code> and <code>AWS_SECRET_ACCESS_KEY</code>, environment variables, representing your AWS Access Key and AWS Secret Key:
+    <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">AWS_ACCESS_KEY_ID</span><span class="o">=</span><span class="s2">&quot;an-access-key&quot;</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">AWS_SECRET_ACCESS_KEY</span><span class="o">=</span><span class="s2">&quot;a-secret-key&quot;</span>
+</code></pre></div></li>
+</ol>
+<!-- markdown-link-check-enable -->
+
+<p>Reference: <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs#environment-variables">AWS Provider - Environment Variables</a></p>
+<h4 id="122-google-cloud">1.2.2 Google Cloud</h4>
+<ol>
+<li>Install the <a href="https://cloud.google.com/sdk/docs/downloads-interactive">Google Cloud SDK</a></li>
+<li>In a terminal, enter : <code>gcloud auth application-default login</code></li>
+</ol>
+<h4 id="123-microsoft-azure">1.2.3 Microsoft Azure</h4>
+<ol>
+<li>Install <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli">Azure CLI</a></li>
+<li>In a terminal, enter : <code>az login</code></li>
+</ol>
+<p>Reference : <a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli">Azure Provider: Authenticating using the Azure CLI</a></p>
+<h4 id="124-openstack-ovh">1.2.4 OpenStack / OVH</h4>
+<ol>
+<li>
+<p>Download your OpenStack Open RC file.
+It is project-specific and contains the credentials used
+by Terraform to communicate with OpenStack API.
+To download, using OpenStack web page go to:
+<strong>Project</strong> → <strong>API Access</strong>, then click on <strong>Download OpenStack RC File</strong>
+then right-click on <strong>OpenStack RC File (Identity API v3)</strong>, <strong>Save Link as...</strong>,
+and save the file.</p>
+</li>
+<li>
+<p>In a terminal located in the same folder as your OpenStack RC file,
+source the OpenStack RC file:
+    <div class="highlight"><pre><span></span><code>source *-openrc.sh
+</code></pre></div>
+This command will ask for a password, enter your OpenStack password.</p>
+</li>
+</ol>
+<h3 id="13-cloud-api">1.3 Cloud API</h3>
+<p>Once you are authenticated with your cloud provider, you should be able to
+communicate with its API. This section lists for each provider some
+instructions to test this.</p>
+<h4 id="131-aws">1.3.1 AWS</h4>
+<ol>
+<li>In a dedicated temporary folder, create a file named <code>test_aws.tf</code>
+with the following content:
+    <div class="highlight"><pre><span></span><code><span class="kr">provider</span><span class="w"> </span><span class="nv">&quot;aws&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">region</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;us-east-1&quot;</span>
+<span class="p">}</span>
+
+<span class="kr">data</span><span class="w"> </span><span class="nc">&quot;aws_ec2_instance_type&quot;</span><span class="w"> </span><span class="nv">&quot;example&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">instance_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;t2.micro&quot;</span>
+<span class="p">}</span>
+</code></pre></div></li>
+<li>In a terminal, move to where the file is located, then:
+    <div class="highlight"><pre><span></span><code>terraform<span class="w"> </span>init
+</code></pre></div></li>
+<li>Finally, test terraform communication with AWS:
+    <div class="highlight"><pre><span></span><code>terraform plan
+</code></pre></div>
+    If everything is configured properly, terraform will output:
+    <div class="highlight"><pre><span></span><code>No changes. Your infrastructure matches the configuration.
+</code></pre></div>
+    Otherwise, it will output:
+    <div class="highlight"><pre><span></span><code>Error: error configuring Terraform AWS Provider: no valid credential sources for Terraform AWS Provider found.
+</code></pre></div></li>
+<li>You can delete the temporary folder and its content.</li>
+</ol>
+<h4 id="132-google-cloud">1.3.2 Google Cloud</h4>
+<p>In a terminal, enter:
+<div class="highlight"><pre><span></span><code>gcloud projects list
+</code></pre></div>
+It should output a table with 3 columns
+<div class="highlight"><pre><span></span><code>PROJECT_ID NAME PROJECT_NUMBER
+</code></pre></div></p>
+<p>Take note of the <code>project_id</code> of the Google Cloud project you want to use,
+you will need it later.</p>
+<h4 id="133-microsoft-azure">1.3.3 Microsoft Azure</h4>
+<p>In a terminal, enter:
+<div class="highlight"><pre><span></span><code>az account show
+</code></pre></div>
+It should output a JSON dictionary similar to this:
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;environmentName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AzureCloud&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;homeTenantId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;98467e3b-33c2-4a34-928b-ed254db26890&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;4dda857e-1d61-457f-b0f0-e8c784d1fb20&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;isDefault&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;managedByTenants&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pay-As-You-Go&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Enabled&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;tenantId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;495fc59f-96d9-4c3f-9c78-7a7b5f33d962&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h4 id="134-openstack-ovh">1.3.4 OpenStack / OVH</h4>
+<ol>
+<li>In a dedicated temporary folder, create a file named <code>test_os.tf</code>
+with the following content:
+    <div class="highlight"><pre><span></span><code><span class="nb">terraform</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nb">required_providers</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nb">openstack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="na">source</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;terraform-provider-openstack/openstack&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+<span class="kr">data</span><span class="w"> </span><span class="nc">&quot;openstack_identity_auth_scope_v3&quot;</span><span class="w"> </span><span class="nv">&quot;scope&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my_scope&quot;</span>
+<span class="p">}</span>
+</code></pre></div></li>
+<li>In a terminal, move to where the file is located, then:
+    <div class="highlight"><pre><span></span><code>terraform<span class="w"> </span>init
+</code></pre></div></li>
+<li>Finally, test terraform communication with OpenStack:
+    <div class="highlight"><pre><span></span><code>terraform plan
+</code></pre></div>
+    If everything is configured properly, terraform will output:
+    <div class="highlight"><pre><span></span><code>No changes. Your infrastructure matches the configuration.
+</code></pre></div>
+    Otherwise, it will output:
+    <div class="highlight"><pre><span></span><code>Error: Error creating OpenStack identity client:
+</code></pre></div>
+    if the OpenStack cloud API cannot be reached.</li>
+<li>You can delete the temporary folder and its content.</li>
+</ol>
+<h3 id="14-quotas">1.4 Quotas</h3>
+<h4 id="141-aws">1.4.1 AWS</h4>
+<p>The default quotas set by Amazon are sufficient to build the Magic Castle
+AWS examples. To increase the limits, or request access to special
+resources like GPUs or high performance network interface, refer to
+<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html">Amazon EC2 service quotas</a>.</p>
+<h4 id="142-google-cloud">1.4.2 Google Cloud</h4>
+<p>The default quotas set by Google Cloud are sufficient to build the Magic Castle
+GCP examples. To increase the limits, or request access to special
+resources like GPUs, refer to
+<a href="https://cloud.google.com/compute/quotas">Google Compute Engine Resource quotas</a>.</p>
+<h4 id="143-microsoft-azure">1.4.3 Microsoft Azure</h4>
+<p>The default quotas set by Microsoft Azure are sufficient to build the Magic Castle
+Azure examples. To increase the limits, or request access to special
+resources like GPUs or high performance network interface, refer to
+<a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits">Azure subscription and service limits, quotas, and constraints</a>.</p>
+<h4 id="144-openstack">1.4.4 OpenStack</h4>
+<p>Minimum project requirements:</p>
+<ul>
+<li>1 floating IP</li>
+<li>3 security groups</li>
+<li>1 network (see note 1)</li>
+<li>1 subnet (see note 1)</li>
+<li>1 router (see note 1)</li>
+<li>3 volumes</li>
+<li>3 instances</li>
+<li>8 VCPUs</li>
+<li>7 neutron ports</li>
+<li>12 GB of RAM</li>
+<li>8 security rules</li>
+<li>80 GB of volume storage</li>
+</ul>
+<p><strong>Note 1</strong>: Magic Castle supposes the OpenStack project comes with a network, a subnet and a router already initialized. If any of these components is missing, you will need to create them manually before launching terraform.</p>
+<ul>
+<li><a href="https://apps.fz-juelich.de/jsc/hps/jsccloud/usage_cloud.html#create-and-manage-networks">Create and manage networks, JUSUF user documentation</a></li>
+<li><a href="https://docs.openstack.org/horizon/latest/user/create-networks.html">Create and manage network - UI, OpenStack Documentation</a></li>
+<li><a href="https://docs.openstack.org/ocata/user-guide/cli-create-and-manage-networks.html">Create and manage network - CLI, OpenStack Documentation</a></li>
+</ul>
+<h4 id="145-ovh">1.4.5 OVH</h4>
+<p>The default quotas set by OVH are sufficient to build the Magic Castle
+OVH examples. To increase the limits, or request access to special
+resources like GPUs, refer to
+<a href="https://docs.ovh.com/ca/en/public-cloud/increase-public-cloud-quota/">OVHcloud - Increasing Public Cloud quotas</a>.</p>
+<h2 id="2-cloud-cluster-architecture-overview">2. Cloud Cluster Architecture Overview</h2>
+<p><img alt="Magic Castle Service Architecture" src="https://docs.google.com/drawings/d/e/2PACX-1vRGFtPevjgM0_ZrkIBQY881X73eQGaXDJ1Fb48Z0DyOe61h2dYdw0urWF2pQZWUTdcNSAM868sQ2Sii/pub?w=1259&amp;h=960" /></p>
+<h2 id="3-initialization">3. Initialization</h2>
+<h3 id="31-main-file">3.1 Main File</h3>
+<ol>
+<li>Go to https://github.com/ComputeCanada/magic_castle/releases.</li>
+<li>Download the latest release of Magic Castle for your cloud provider.</li>
+<li>Open a Terminal.</li>
+<li>Uncompress the release: <code>tar xvf magic_castle*.tar.gz</code></li>
+<li>Rename the release folder after your favourite superhero: <code>mv magic_castle* hulk</code></li>
+<li>Move inside the folder: <code>cd hulk</code></li>
+</ol>
+<p>The file <code>main.tf</code> contains Terraform modules and outputs. Modules are files that define a set of
+resources that will be configured based on the inputs provided in the module block.
+Outputs are used to tell Terraform which variables of
+our module we would like to be shown on the screen once the resources have been instantiated.</p>
+<p>This file will be our main canvas to design our new clusters. As long as the module block
+parameters suffice to our need, we will be able to limit our configuration to this sole
+file. Further customization will be addressed during the second part of the workshop.</p>
+<h3 id="32-terraform">3.2 Terraform</h3>
+<p>Terraform fetches the plugins required to interact with the cloud provider defined by
+our <code>main.tf</code> once when we initialize. To initialize, enter the following command:
+<div class="highlight"><pre><span></span><code>terraform init
+</code></pre></div></p>
+<p>The initialization is specific to the folder where you are currently located.
+The initialization process looks at all <code>.tf</code> files and fetches the plugins required
+to build the resources defined in these files. If you replace some or all
+<code>.tf</code> files inside a folder that has already been initialized, just call the command
+again to make sure you have all plugins.</p>
+<p>The initialization process creates a <code>.terraform</code> folder at the root of your current
+folder. You do not need to look at its content for now.</p>
+<h4 id="321-terraform-modules-upgrade">3.2.1 Terraform Modules Upgrade</h4>
+<p>Once Terraform folder has been initialized, it is possible to fetch the newest version
+of the modules used by calling:
+<div class="highlight"><pre><span></span><code>terraform init -upgrade
+</code></pre></div></p>
+<h2 id="4-configuration">4. Configuration</h2>
+<p>In the <code>main.tf</code> file, there is a module named after your cloud provider,
+i.e.: <code>module "openstack"</code>. This module corresponds to the high-level infrastructure
+of your cluster.</p>
+<p>The following sections describes each variable that can be used to customize
+the deployed infrastructure and its configuration. Optional variables can be
+absent from the example module. The order of the variables does not matter,
+but the following sections are ordered as the variables appear in the examples.</p>
+<h3 id="41-source">4.1 source</h3>
+<p>The first line of the module block indicates to Terraform where it can find
+the files that define the resources that will compose your cluster.
+In the releases, this variable is a relative path to the cloud
+provider folder (i.e.: <code>./aws</code>).</p>
+<p><strong>Requirement</strong>: Must be a path to a local folder containing the Magic Castle
+Terraform files for the cloud provider of your choice. It can also be a git
+repository. Refer to <a href="https://www.terraform.io/language/modules/sources#generic-git-repository">Terraform documentation on module source</a> for more information.</p>
+<p><strong>Post build modification effect</strong>: <code>terraform init</code> will have to be
+called again and the next <code>terraform apply</code> might propose changes if the infrastructure
+describe by the new module is different.</p>
+<h3 id="42-config_git_url">4.2 config_git_url</h3>
+<p>Magic Castle configuration management is handled by
+<a href="https://en.wikipedia.org/wiki/Puppet_(software)">Puppet</a>. The Puppet
+configuration files are stored in a git repository. This is
+typically <a href="https://www.github.com/ComputeCanada/puppet-magic_castle">ComputeCanada/puppet-magic_castle</a> repository on GitHub.</p>
+<p>Leave this variable to its current value to deploy a vanilla Magic Castle cluster.</p>
+<p>If you wish to customize the instances' role assignment, add services, or
+develop new features for Magic Castle, fork the <a href="https://www.github.com/ComputeCanada/puppet-magic_castle">ComputeCanada/puppet-magic_castle</a> and point this variable to
+your fork's URL. For more information on Magic Castle puppet configuration
+customization, refer to <a href="developers/">MC developer documentation</a>.</p>
+<p><strong>Requirement</strong>: Must be a valid HTTPS URL to a git repository describing a
+Puppet environment compatible with <a href="developers/">Magic Castle</a>. If the repo
+is private, generate an access token with a permission to read the repo content,
+and provide the token in the <code>config_git_url</code> like this:
+<div class="highlight"><pre><span></span><code>config_git_url = &quot;https://oauth2:${oauth-key-goes-here}@domain.com/username/repo.git&quot;
+</code></pre></div>
+This works for GitHub and GitLab (including community edition).</p>
+<p><strong>Post build modification effect</strong>: no effect. To change the Puppet configuration source,
+destroy the cluster or change it manually on the Puppet server.</p>
+<h3 id="43-config_version">4.3 config_version</h3>
+<p>Since Magic Cluster configuration is managed with git, it is possible to specify
+which version of the configuration you wish to use. Typically, it will match the
+version number of the release you have downloaded (i.e: <code>9.3</code>).</p>
+<p><strong>Requirement</strong>: Must refer to a git commit, tag or branch existing
+in the git repository pointed by <code>config_git_url</code>.</p>
+<p><strong>Post build modification effect</strong>: none. To change the Puppet configuration version,
+destroy the cluster or change it manually on the Puppet server.</p>
+<h3 id="44-cluster_name">4.4 cluster_name</h3>
+<p>Defines the <code>ClusterName</code> variable in <code>slurm.conf</code> and the name of
+the cluster in the Slurm accounting database
+(<a href="https://slurm.schedmd.com/slurm.conf.html">see <code>slurm.conf</code> documentation</a>).</p>
+<p><strong>Requirement</strong>: Must be lowercase alphanumeric characters and start with a letter. It can include dashes. cluster_name must be 40 characters or less.</p>
+<p><strong>Post build modification effect</strong>: destroy and re-create all instances at next <code>terraform apply</code>.</p>
+<h3 id="45-domain">4.5 domain</h3>
+<p>Defines</p>
+<ul>
+<li>the Kerberos realm name when initializing FreeIPA.</li>
+<li>the internal domain name and the <code>resolv.conf</code> search domain as
+<code>int.{cluster_name}.{domain}</code></li>
+</ul>
+<p>Optional modules following the current module in the example <code>main.tf</code> can
+be used to register DNS records in relation to your cluster if the
+DNS zone of this domain is administered by one of the supported providers.
+Refer to section <a href="#6-dns-configuration">6. DNS Configuration</a>
+for more details.</p>
+<p><strong>Requirements</strong>:</p>
+<ul>
+<li>Must be a fully qualified DNS name and <a href="https://tools.ietf.org/html/rfc1035">RFC-1035-valid</a>.
+Valid format is a series of labels 1-63 characters long matching the
+regular expression <code>[a-z]([-a-z0-9]*[a-z0-9])</code>, concatenated with periods.</li>
+<li>No wildcard record A of the form <code>*.domain. IN A x.x.x.x</code> exists for that
+domain. You can verify no such record exist with <code>dig</code>:
+    <div class="highlight"><pre><span></span><code>dig +short &#39;*.${domain}&#39;
+</code></pre></div></li>
+</ul>
+<p><strong>Post build modification effect</strong>: destroy and re-create all instances at next <code>terraform apply</code>.</p>
+<h3 id="46-image">4.6 image</h3>
+<p>Defines the name of the image that will be used as the base image for the cluster nodes.</p>
+<p>You can use a custom image if you wish, but configuration management
+should be mainly done through Puppet. Image customization is mostly
+envisioned as a way to accelerate the configuration process by applying the
+security patches and OS updates in advance.</p>
+<p>To specify a different image for an instance type, use the
+<a href="#472-optional-attributes"><code>image</code> instance attribute</a></p>
+<p><strong>Requirements</strong>: the operating system on the image must be from the RedHat family.
+This includes CentOS (8, 9), Rocky Linux (8, 9), and AlmaLinux (8, 9).</p>
+<p><strong>Warning</strong>: Avoid "with LVM" or "LVM-partitioned" images as Magic Castle is currently
+unable to detect that the root disk has unallocated free space available and grow the
+main partition (example: <a href="https://aws.amazon.com/marketplace/pp/prodview-yjxmiuc6p5jzk">Rocky Linux 9 with LVM</a>).
+Therefore, the root disk size is ignored and typically ends up being insufficient
+for the configuration requirements.</p>
+<p><strong>Post build modification effect</strong>: none. If this variable is modified, existing
+instances will ignore the change and future instances will use the new value.</p>
+<h4 id="461-aws">4.6.1 AWS</h4>
+<p>The image field needs to correspond to the Amazon Machine Image (AMI) ID.
+AMI IDs are specific to regions and architectures. Make sure to use the
+right ID for the region and CPU architecture you are using (i.e: x86_64).</p>
+<p>To find out which AMI ID you need to use, refer to
+- <a href="https://wiki.almalinux.org/cloud/AWS.html#community-amis">AlmaLinux OS Amazon Web Services AMIs</a>
+- <a href="https://www.centos.org/download/aws-images/">CentOS list of official images available on the AWS Marketplace</a>
+- <a href="https://rockylinux.org/download/">Rocky Linux</a></p>
+<p><strong>Note</strong>: Before you can use the AMI, you will need to accept the usage terms
+and subscribe to the image on AWS Marketplace. On your first deployment,
+you will be presented an error similar to this one:
+<div class="highlight"><pre><span></span><code>│ Error: Error launching source instance: OptInRequired: In order to use this AWS Marketplace product you need to accept terms and subscribe. To do so please visit https://aws.amazon.com/marketplace/pp?sku=cvugziknvmxgqna9noibqnnsy
+│   status code: 401, request id: 1f04a85a-f16a-41c6-82b5-342dc3dd6a3d
+│
+│   on aws/infrastructure.tf line 67, in resource &quot;aws_instance&quot; &quot;instances&quot;:
+│   67: resource &quot;aws_instance&quot; &quot;instances&quot; {
+</code></pre></div>
+To accept the terms and fix the error, visit the link provided in the error output,
+then click on the <code>Click to Subscribe</code> yellow button.</p>
+<h4 id="462-microsoft-azure">4.6.2 Microsoft Azure</h4>
+<p>The image field for Azure can either be a string or a map.</p>
+<p>A string image specification will correspond to the image id. Image ids
+can be retrieved using the following command-line:
+<div class="highlight"><pre><span></span><code>az image builder list
+</code></pre></div></p>
+<p>A map image specification needs to contain the following
+fields <code>publisher</code>, <code>offer</code> <code>sku</code>, and optionally <code>version</code>.
+The map is used to specify images found in <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/cli-ps-findimage">Azure Marketplace</a>.
+Here is an example:
+<div class="highlight"><pre><span></span><code>{
+    publisher = &quot;OpenLogic&quot;,
+    offer     = &quot;CentOS-CI&quot;,
+    sku       = &quot;7-CI&quot;
+}
+</code></pre></div></p>
+<h4 id="463-openstack">4.6.3 OpenStack</h4>
+<p>The image name can be a regular expression. If more than one image is returned by the query
+to OpenStack, the most recent is selected.</p>
+<h4 id="464-incus">4.6.4 Incus</h4>
+<p>The source of the images is <a href="https://images.linuxcontainers.org/">images.linuxcontainers.org/</a>.
+Make sure to select the <code>cloud</code> variant of the distribution image since only these images
+have cloud-init installed and enabled, which is required for bootstrapping Magic Castle.</p>
+<p>Since the cloud variant of images is a requirement for Magic Castle, it is implemented
+that an Incus image name that does not end with <code>/cloud</code> has to be a local image
+created using the process documented in section
+<a href="#1012-create-a-compute-node-image">10.12 - Create a compute node image</a>.</p>
+<h3 id="47-instances">4.7 instances</h3>
+<p>The <code>instances</code> variable is a map that defines the virtual machines that will form
+the cluster. The map' keys define the hostnames and the values are the attributes
+of the virtual machines.</p>
+<p>Each instance is identified by a unique hostname. An instance's hostname is written as
+the key followed by its index (1-based). The following map:
+<div class="highlight"><pre><span></span><code><span class="nb">instances</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nb">mgmt</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="na">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;p2-4gb&quot;</span><span class="p">,</span><span class="w"> </span><span class="na">tags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[...]</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nb">login</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="na">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;p2-4gb&quot;</span><span class="p">,</span><span class="w">     </span><span class="na">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="na">tags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[...]</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nb">node</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="na">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;c2-15gb-31&quot;</span><span class="p">,</span><span class="w"> </span><span class="na">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="na">tags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[...]</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nb">gpu-node</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="na">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;gpu2.large&quot;</span><span class="p">,</span><span class="w"> </span><span class="na">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="na">tags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[...]</span><span class="w"> </span><span class="p">},</span>
+<span class="p">}</span>
+</code></pre></div>
+will spawn instances with the following hostnames:
+<div class="highlight"><pre><span></span><code>mgmt1
+login1
+node1
+node2
+gpu-node1
+gpu-node2
+gpu-node3
+</code></pre></div></p>
+<p>Hostnames must follow a set of rules, from <code>hostname</code> man page:</p>
+<blockquote>
+<p>Valid characters for hostnames are ASCII letters from a to z,
+the digits from 0 to 9, and the hyphen (-). A hostname may not start with a hyphen.</p>
+</blockquote>
+<p>Two attributes are expected to be defined for each instance:
+1. <code>type</code>: name for varying combinations of CPU, memory, GPU, etc. (i.e: <code>t2.medium</code>);
+2. <code>tags</code>: list of labels that defines the role of the instance.</p>
+<h4 id="471-tags">4.7.1 tags</h4>
+<p>Tags are used in the Terraform code to identify if devices (volume, network) need to be attached to an
+instance, while in Puppet code tags are used to identify roles of the instances.</p>
+<p>Terraform tags:</p>
+<ul>
+<li><code>login</code>: identify instances accessible with SSH from Internet and pointed by the domain name A records</li>
+<li><code>pool</code>: identify instances created only when their hostname appears in the <a href="#419-pool-optional"><code>var.pool</code></a> list.</li>
+<li><code>proxy</code>: identify instances accessible with HTTP/HTTPS and pointed by the vhost A records</li>
+<li><code>public</code>: identify instances that need to have a public ip address reachable from Internet</li>
+<li><code>puppet</code>: identify instances configured as Puppet servers</li>
+<li><code>spot</code>: identify instances that are to be spawned as spot/preemptible instances.
+This tag is supported in AWS, Azure and GCP. It is ignored by OpenStack and OVH.</li>
+<li><code>efa</code>: attach an Elastic Fabric Adapter network interface to the instance. This tag is supported in AWS.</li>
+</ul>
+<p>Puppet tags expected by the <a href="https://www.github.com/ComputeCanada/puppet-magic_castle">puppet-magic_castle</a> environment.</p>
+<ul>
+<li><code>login</code>: identify a login instance (minimum: 2 CPUs, 2GB RAM)</li>
+<li><code>mgmt</code>: identify a management instance i.e: FreeIPA server, Slurm controller, Slurm DB (minimum: 2 CPUs, 6GB RAM)</li>
+<li><code>nfs</code>: identify the instance that acts as an NFS server.</li>
+<li><code>node</code>: identify a compute node instance (minimum: 1 CPUs, 2GB RAM)</li>
+<li><code>pool</code>: when combined with <code>node</code>, it identifies compute nodes that Slurm can resume/suspend to meet workload demand.</li>
+<li><code>proxy</code>: identify the instance that executes the Caddy reverse proxy and JupyterHub.</li>
+</ul>
+<p>In the Magic Castle Puppet environment, an instance cannot be tagged as <code>mgmt</code> and <code>proxy</code>.</p>
+<p>You are free to define your own additional tags.</p>
+<h4 id="472-optional-attributes">4.7.2 Optional attributes</h4>
+<p>Optional attributes can be defined:</p>
+<ol>
+<li><code>count</code>: number of virtual machines with this combination of hostname prefix, type and tags to create (default: 1).</li>
+<li><code>image</code>: specification of the image to use for this instance type. (default: global <a href="#46-image"><code>image</code></a> value).
+Refer to section <a href="#1012-create-a-compute-node-image">10.12 - Create a compute node image</a> to learn how this attribute can
+be leveraged to accelerate compute node configuration.</li>
+<li>
+<p><code>disk_type</code>: type of the instance's root disk (default: see the next table).</p>
+<table>
+<thead>
+<tr>
+<th>Provider</th>
+<th style="text-align: left;"><code>disk_type</code></th>
+<th style="text-align: right;"><code>disk_size</code> (GiB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Azure</td>
+<td style="text-align: left;"><code>Premium_LRS</code></td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td>AWS</td>
+<td style="text-align: left;"><code>gp2</code></td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td>GCP</td>
+<td style="text-align: left;"><code>pd-ssd</code></td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td>OpenStack</td>
+<td style="text-align: left;"><code>null</code></td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td>OVH</td>
+<td style="text-align: left;"><code>null</code></td>
+<td style="text-align: right;">10</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><code>disk_size</code>: size in gibibytes (GiB) of the instance's root disk containing
+the operating system and service software. The default value is computed has the
+maximum between the cloud provider default size (see previous table) and the
+recommended minimum size per tag as specified in the following table.</p>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th style="text-align: right;">min <code>disk_size</code> (GiB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mgmt</code></td>
+<td style="text-align: right;">20</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><code>mig</code>: map of <a href="https://docs.nvidia.com/datacenter/tesla/mig-user-guide/index.html">NVIDIA Multi-Instance GPU (MIG)</a> short profile names and count used to partition the instances' GPU, example for an A100:
+    <div class="highlight"><pre><span></span><code>mig = { &quot;1g.5gb&quot; = 2, &quot;2g.10gb&quot; = 1, &quot;3g.20gb&quot; = 1 }
+</code></pre></div>
+    This is only functional with <a href="https://docs.nvidia.com/datacenter/tesla/mig-user-guide/index.html#supported-gpus">MIG supported GPUs</a>,
+    and with x86-64 processors (see <a href="https://github.com/NVIDIA/mig-parted/issues/30">NVIDIA/mig-parted issue #30</a>).</p>
+</li>
+<li><code>shard</code>: total number of <a href="https://slurm.schedmd.com/gres.html#Sharding">Sharding</a> on the node. Sharding allows sharing the same GPU on multiple jobs. The total number of shards is evenly distributed across all GPUs on the node.</li>
+<li><code>features</code>: list of <a href="https://slurm.schedmd.com/slurm.conf.html#OPT_Features">features</a> on the node. This allows to select nodes based on the <code>--constraint</code> option. Example:
+    <div class="highlight"><pre><span></span><code>features = [&quot;skylake&quot;, &quot;nvidia&quot;]
+</code></pre></div></li>
+</ol>
+<p>The instance specifications are retrieved from the cloud provider data source, but it is possible to explicitly specify them.</p>
+<ol>
+<li><code>cpus</code>: number of logical processors on the node - <a href="https://slurm.schedmd.com/slurm.conf.html#OPT_CPUs"><code>CPUs</code> in slurm.conf</a></li>
+<li><code>ram</code>: size of real memory on the node in megabyte - <a href="https://slurm.schedmd.com/slurm.conf.html#OPT_RealMemory"><code>RealMemory</code> in slurm.conf</a></li>
+<li><code>gpus</code>: number of graphical processor on the node - <a href="https://slurm.schedmd.com/slurm.conf.html#OPT_Gres_1"><code>Gres=gpu:&lt;gpus&gt;</code> in slurm.conf</a></li>
+<li><code>gpu_type</code>: type of graphical processor on the node - <a href="https://slurm.schedmd.com/slurm.conf.html#OPT_Gres_1"><code>Gres=gpu:&lt;gpu_type&gt;:&lt;gpus&gt;</code> in slurm.conf</a></li>
+</ol>
+<p>For some cloud providers, it possible to define additional attributes.
+The following sections present the available attributes per provider.</p>
+<h5 id="aws">AWS</h5>
+<p>For instances with the <code>spot</code> tags, these attributes can also be set:</p>
+<ul>
+<li><code>wait_for_fulfillment</code> (default: true)</li>
+<li><code>spot_type</code> (default: permanent)</li>
+<li><code>instance_interruption_behavior</code> (default: stop)</li>
+<li><code>spot_price</code> (default: not set)</li>
+<li><code>block_duration_minutes</code> (default: not set) [note 1]
+For more information on these attributes, refer to
+<a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/spot_instance_request#argument-reference"><code>aws_spot_instance_request</code> argument reference</a></li>
+</ul>
+<p><strong>Note 1</strong>: <code>block_duration_minutes</code> is not available to new AWS accounts
+or accounts without billing history -
+<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-requests.html#fixed-duration-spot-instances">AWS EC2 Spot Instance requests</a>. When not available, its usage can trigger
+quota errors like this:
+<div class="highlight"><pre><span></span><code>Error requesting spot instances: MaxSpotInstanceCountExceeded: Max spot instance count exceeded
+</code></pre></div></p>
+<h5 id="azure">Azure</h5>
+<p>For instances with the <code>spot</code> tags, these attributes can also be set:</p>
+<ul>
+<li><code>max_bid_price</code> (default: not set)</li>
+<li><code>eviction_policy</code> (default: <code>Deallocate</code>)
+For more information on these attributes, refer to
+<a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine#argument-reference"><code>azurerm_linux_virtual_machine</code> argument reference</a></li>
+</ul>
+<h5 id="gcp">GCP</h5>
+<ul>
+<li><code>gpu_type</code>: name of the GPU model to attach to the instance. Refer to
+<a href="https://cloud.google.com/compute/docs/gpus">Google Cloud documentation</a> for the list of
+available models per region</li>
+<li><code>gpus</code>: number of GPUs of the <code>gpu_type</code> model to attach to the instance</li>
+</ul>
+<h5 id="incus">Incus</h5>
+<ul>
+<li><code>target</code>: name of the <a href="https://linuxcontainers.org/incus/docs/main/howto/cluster_manage_instance/#launch-an-instance-on-a-specific-cluster-member">specific cluster member</a> to deploy the instance. <strong>Only use with Incus cluster.</strong> </li>
+</ul>
+<h4 id="473-post-build-modification-effect">4.7.3 Post build modification effect</h4>
+<p>Modifying any part of the map after the cluster is built will only affect
+the type of instances associated with what was modified at the
+next <code>terraform apply</code>.</p>
+<h3 id="48-volumes">4.8 volumes</h3>
+<p>The <code>volumes</code> variable is a map that defines the block devices that should be attached
+to instances that have the corresponding key in their list of tags. To each instance
+with the tag, unique block devices are attached, no multi-instance attachment is supported.</p>
+<p>Each volume in map is defined a key corresponding to its and a map of attributes:</p>
+<ul>
+<li><code>size</code>: size of the block device in GB.</li>
+<li><code>type</code> (optional): type of volume to use. Default value per provider:</li>
+<li>Azure: <code>Premium_LRS</code></li>
+<li>AWS: <code>gp2</code></li>
+<li>GCP: <code>pd-ssd</code></li>
+<li>OpenStack: <code>null</code></li>
+<li>OVH: <code>null</code></li>
+<li><code>managed</code> (optional, def: <code>true</code>): set to <code>false</code> to indicate that the volume already
+exists and should not be created by Terraform only mounted. When a volume is configured with <code>managed = false</code>,
+its name needs to match the following pattern <code>{cluster_name}-{mounting_hostname}-{tag}-{name}</code>,
+for example <code>phoenix-mgmt1-nfs-home</code>.</li>
+</ul>
+<p>Volumes with a tag that have no corresponding instance will not be created.</p>
+<p>In the following example:
+<div class="highlight"><pre><span></span><code><span class="nb">instances</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">  </span><span class="nb">server</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="na">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;p4-6gb&quot;, tags = [&quot;nfs&quot;</span><span class="p">]</span><span class="w"> </span><span class="p">}</span>
+<span class="p">}</span>
+<span class="nb">volumes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nb">nfs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nb">home</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="na">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">100</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="nb">project</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="na">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">100</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="nb">scratch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="na">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">100</span><span class="w"> </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="nb">mds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nb">oss1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="na">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">500</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="nb">oss2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="na">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">500</span><span class="w"> </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>The instance <code>server1</code> will have three volumes attached to it. The volumes tagged <code>mds</code> are
+not created since no instances have the corresponding tag.</p>
+<p>To define an infrastructure with no volumes, set the <code>volumes</code> variable to an empty map:
+<div class="highlight"><pre><span></span><code><span class="nb">volumes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
+</code></pre></div></p>
+<p><strong>Post build modification effect</strong>: destruction of the corresponding volumes and attachments,
+and creation of new empty volumes and attachments. If an no instance with a corresponding tag
+exist following modifications, the volumes will be deleted.</p>
+<h3 id="49-public_keys">4.9 public_keys</h3>
+<p>List of SSH public keys that will have access to your cluster sudoer account.</p>
+<p><strong>Post build modification effect</strong>: trigger scp of hieradata files at next <code>terraform apply</code>.
+The sudoer account <code>authorized_keys</code> file will be updated by each instance's Puppet agent
+following the copy of the hieradata files.</p>
+<h3 id="410-nb_users-optional">4.10 nb_users (optional)</h3>
+<p><strong>default value</strong>: 0</p>
+<p>Defines how many guest user accounts will be created in
+FreeIPA. Each user account shares the same randomly generated password.
+The usernames are defined as <code>userX</code> where <code>X</code> is a number between 1 and
+the value of <code>nb_users</code> (zero-padded, i.e.: <code>user01 if X &lt; 100</code>, <code>user1 if X &lt; 10</code>).</p>
+<p>If an NFS NFS <code>home</code> volume is defined, each user will have a home folder
+on a shared NFS storage hosted on the NFS server node.</p>
+<p>User accounts do not have sudoer privileges. If you wish to use <code>sudo</code>,
+you will have to login using the sudoer account and the SSH keys listed
+in <code>public_keys</code>.</p>
+<p>If you would like to add a user account after the cluster is built, refer to
+section <a href="#103-add-ldap-users">10.3</a> and <a href="#104-increase-the-number-of-guest-accounts">10.4</a>.</p>
+<p><strong>Requirement</strong>: Must be an integer, minimum value is 0.</p>
+<p><strong>Post build modification effect</strong>: trigger scp of hieradata files at next <code>terraform apply</code>.
+If <code>nb_users</code> is increased, new guest accounts will be created during the following
+Puppet run on <code>mgmt1</code>. If <code>nb_users</code> is decreased, it will have no effect: the guest accounts
+already created will be left intact.</p>
+<h3 id="411-guest_passwd-optional">4.11 guest_passwd (optional)</h3>
+<p><strong>default value</strong>: 4 random words separated by dots</p>
+<p>Defines the password for the guest user accounts instead of using a
+randomly generated one.</p>
+<p><strong>Requirement</strong>: Minimum length <strong>8 characters</strong>.</p>
+<p>The password can be provided in a PKCS7 encrypted form. Refer to sub-section
+<a href="#415-eyaml_key-optional">4.15 eyaml_key</a>
+for instructions on how to encrypt the password.</p>
+<p><strong>Post build modification effect</strong>: trigger scp of hieradata files at next <code>terraform apply</code>.
+Password of all guest accounts will be changed to match the new password value.</p>
+<h3 id="412-sudoer_username-optional">4.12 sudoer_username (optional)</h3>
+<p><strong>default value</strong>: <code>centos</code></p>
+<p>Defines the username of the account with sudo privileges. The account
+ssh authorized keys are configured with the SSH public keys with
+<code>public_keys</code>.</p>
+<p><strong>Post build modification effect</strong>: none. To change sudoer username,
+destroy the cluster or redefine the value of
+<a href="https://github.com/computecanada/puppet-magic_castle#profilebase"><code>profile::base::sudoer_username</code></a>
+in <code>hieradata</code>.</p>
+<h3 id="413-hieradata-optional">4.13 hieradata (optional)</h3>
+<p><strong>default value</strong>: empty string</p>
+<p>Defines custom variable values that are injected in the Puppet hieradata file.
+Useful to override common configuration of Puppet classes.</p>
+<p>List of useful examples:</p>
+<ul>
+<li>Receive logs of Puppet runs with changes to your email, add the
+following line to the string:
+    <div class="highlight"><pre><span></span><code><span class="nt">profile::base::admin_email</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;me@example.org&quot;</span>
+</code></pre></div></li>
+<li>Define ip addresses that can never be banned by fail2ban:
+    <div class="highlight"><pre><span></span><code><span class="nt">profile::fail2ban::ignore_ip</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&#39;132.203.0.0/16&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&#39;8.8.8.8&#39;</span><span class="p p-Indicator">]</span>
+</code></pre></div></li>
+<li>Remove one-time password field from JupyterHub login page:
+    <div class="highlight"><pre><span></span><code><span class="nt">jupyterhub::enable_otp_auth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+</code></pre></div></li>
+<li>Setup AlertManager to receive Prometheus alerts on Slack:
+    <div class="highlight"><pre><span></span><code><span class="nt">prometheus::alertmanager::route</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">group_by</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;alertname&#39;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;cluster&#39;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;service&#39;</span>
+<span class="w">  </span><span class="nt">group_wait</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;5s&#39;</span>
+<span class="w">  </span><span class="nt">group_interval</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;5m&#39;</span>
+<span class="w">  </span><span class="nt">repeat_interval</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3h&#39;</span>
+<span class="w">  </span><span class="nt">receiver</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;slack&#39;</span>
+
+<span class="nt">prometheus::alertmanager::receivers</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;slack&#39;</span>
+<span class="w">    </span><span class="nt">slack_configs</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">api_url</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;https://hooks.slack.com/services/ABCDEFG123456&#39;</span>
+<span class="w">        </span><span class="nt">channel</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;#channel&quot;</span>
+<span class="w">        </span><span class="nt">send_resolved</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">        </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;username&#39;</span>
+</code></pre></div></li>
+</ul>
+<p>Refer to the following Puppet modules' documentation to know more about the key-values that can be defined:</p>
+<ul>
+<li><a href="https://github.com/ComputeCanada/puppet-magic_castle/blob/main/README.md">puppet-magic_castle</a></li>
+<li><a href="https://github.com/ComputeCanada/puppet-jupyterhub/blob/main/README.md#hieradata-configuration">puppet-jupyterhub</a></li>
+<li><a href="https://forge.puppet.com/modules/puppet/prometheus/">puppet-prometheus</a></li>
+</ul>
+<p>The file created from this string can be found on the Puppet server as <code>/etc/puppetlabs/data/user_data.yaml</code></p>
+<p><strong>Requirement</strong>: The string needs to respect the <a href="https://en.wikipedia.org/wiki/YAML#Syntax">YAML syntax</a>.</p>
+<p><strong>Post build modification effect</strong>: trigger scp of hieradata files at next <code>terraform apply</code>.
+Each instance's Puppet agent will be reloaded following the copy of the hieradata files.</p>
+<h3 id="414-hieradata_dir-optional">4.14 hieradata_dir (optional)</h3>
+<p><strong>default_value:</strong> Empty string</p>
+<p>Defines the path to a directory containing a hierarchy of YAML data files.
+The hierarchy is copied on the Puppet server in <code>/etc/puppetlabs/data/user_data</code>.</p>
+<p><strong>Hierarchy structure:</strong></p>
+<ul>
+<li>per node hostname:</li>
+<li><code>&lt;dir&gt;/hostnames/&lt;hostname&gt;/*.yaml</code></li>
+<li><code>&lt;dir&gt;/hostnames/&lt;hostname&gt;.yaml</code></li>
+<li>per node prefix:</li>
+<li><code>&lt;dir&gt;/prefixes/&lt;prefix&gt;/*.yaml</code></li>
+<li><code>&lt;dir&gt;/prefixes/&lt;prefix&gt;.yaml</code></li>
+<li>all nodes: <code>&lt;dir&gt;/*.yaml</code></li>
+</ul>
+<p>For more information on hieradata, refer to section <a href="#413-hieradata-optional">4.13 hieradata (optional)</a>.</p>
+<p><strong>Post build modification effect</strong>: trigger scp of hieradata files at next <code>terraform apply</code>.
+Each instance's Puppet agent will be reloaded following the copy of the hieradata files.</p>
+<h3 id="415-eyaml_key-optional">4.15 eyaml_key (optional)</h3>
+<p><strong>default value</strong>: empty string</p>
+<p>Defines the private RSA key required to decrypt the values encrypted with hiera-eyaml PKCS7.
+This key will be copied on the Puppet server.</p>
+<p><strong>Post build modification effect</strong>: trigger scp of private key file at next <code>terraform apply</code>.</p>
+<h4 id="4151-generate-eyaml-encryption-keys">4.15.1 Generate eyaml encryption keys</h4>
+<p>If you plan to track the cluster configuration files in git (i.e:<code>main.tf</code>, <code>user_data.yaml</code>),
+it would be a good idea to encrypt the sensitive property values.</p>
+<p>Magic Castle uses <a href="https://github.com/voxpupuli/hiera-eyaml">hiera-eyaml</a> to provide a
+per-value encryption of sensitive properties to be used by Puppet.</p>
+<p>The private key and its corresponding public key wrapped in a X509 certificate can be generated with <code>openssl</code>:</p>
+<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>req<span class="w"> </span>-x509<span class="w"> </span>-nodes<span class="w"> </span>-newkey<span class="w"> </span>rsa:2048<span class="w"> </span>-keyout<span class="w"> </span>private_key.pkcs7.pem<span class="w"> </span>-out<span class="w"> </span>public_key.pkcs7.pem<span class="w"> </span>-batch
+</code></pre></div>
+<p>or with <code>eyaml</code>:</p>
+<div class="highlight"><pre><span></span><code>eyaml<span class="w"> </span>createkeys<span class="w"> </span>--pkcs7-public-key<span class="o">=</span>public_key.pkcs7.pem<span class="w"> </span>--pkcs7-private-key<span class="o">=</span>private_key.pkcs7.pem
+</code></pre></div>
+<h4 id="4152-encrypting-sensitive-properties">4.15.2 Encrypting sensitive properties</h4>
+<p>To encrypt a sensitive property with openssl:
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span>-n<span class="w"> </span><span class="s1">&#39;your-secret&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>openssl<span class="w"> </span>smime<span class="w"> </span>-encrypt<span class="w"> </span>-aes-256-cbc<span class="w"> </span>-outform<span class="w"> </span>der<span class="w"> </span>public_key.pkcs7.pem<span class="w"> </span><span class="p">|</span><span class="w"> </span>openssl<span class="w"> </span>base64<span class="w"> </span>-A<span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;ENC[PKCS7,%s]\n&quot;</span>
+</code></pre></div></p>
+<p>To encrypt a sensitive property with eyaml:
+<div class="highlight"><pre><span></span><code>eyaml<span class="w"> </span>encrypt<span class="w"> </span>-s<span class="w"> </span><span class="s1">&#39;your-secret&#39;</span><span class="w"> </span>--pkcs7-public-key<span class="o">=</span>public_key.pkcs7.pem<span class="w"> </span>-o<span class="w"> </span>string
+</code></pre></div></p>
+<h4 id="4153-terraform-cloud">4.15.3 Terraform cloud</h4>
+<p>To provide the value of this variable via Terraform Cloud, encode the private key content with base64:</p>
+<div class="highlight"><pre><span></span><code>openssl base64 -A -in private_key.pkcs7.pem
+</code></pre></div>
+<p>Define a variable in your main.tf:</p>
+<div class="highlight"><pre><span></span><code><span class="kr">variable</span><span class="w"> </span><span class="nv">&quot;tfc_eyaml_key&quot;</span><span class="w"> </span><span class="p">{}</span>
+<span class="kr">module</span><span class="w"> </span><span class="nv">&quot;openstack&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Then make sure to decode it before passing it to the cloud provider module:</p>
+<div class="highlight"><pre><span></span><code><span class="kr">variable</span><span class="w"> </span><span class="nv">&quot;tfc_eyaml_key&quot;</span><span class="w"> </span><span class="p">{}</span>
+<span class="kr">module</span><span class="w"> </span><span class="nv">&quot;openstack&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="w">  </span><span class="na">eyaml_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">base64decode</span><span class="p">(</span><span class="nv">var.tfc_eyaml_key</span><span class="p">)</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="416-firewall_rules-optional">4.16 firewall_rules (optional)</h3>
+<p><strong>default value</strong>:
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nb">ssh</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;from_port&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">22</span><span class="p">,</span><span class="w">    </span><span class="s2">&quot;to_port&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">22</span><span class="p">,</span><span class="w">    </span><span class="na">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;login&quot;, &quot;protocol&quot; = &quot;tcp&quot;, &quot;cidr&quot; = &quot;0.0.0.0/0&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nb">http</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;from_port&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">80</span><span class="p">,</span><span class="w">    </span><span class="s2">&quot;to_port&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">80</span><span class="p">,</span><span class="w">    </span><span class="na">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;proxy&quot;, &quot;protocol&quot; = &quot;tcp&quot;, &quot;cidr&quot; = &quot;0.0.0.0/0&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nb">https</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;from_port&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">443</span><span class="p">,</span><span class="w">   </span><span class="s2">&quot;to_port&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">443</span><span class="p">,</span><span class="w">   </span><span class="na">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;proxy&quot;, &quot;protocol&quot; = &quot;tcp&quot;, &quot;cidr&quot; = &quot;0.0.0.0/0&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nb">globus</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;from_port&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2811</span><span class="p">,</span><span class="w">  </span><span class="s2">&quot;to_port&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2811</span><span class="p">,</span><span class="w">  </span><span class="na">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;dtn&quot;,   &quot;protocol&quot; = &quot;tcp&quot;, &quot;cidr&quot; = &quot;54.237.254.192/29&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nb">myproxy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;from_port&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">7512</span><span class="p">,</span><span class="w">  </span><span class="s2">&quot;to_port&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">7512</span><span class="p">,</span><span class="w">  </span><span class="na">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;dtn&quot;,   &quot;protocol&quot; = &quot;tcp&quot;, &quot;cidr&quot; = &quot;0.0.0.0/0&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nb">gridftp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;from_port&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">50000</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;to_port&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">51000</span><span class="p">,</span><span class="w"> </span><span class="na">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;dtn&quot;,   &quot;protocol&quot; = &quot;tcp&quot;, &quot;cidr&quot; = &quot;0.0.0.0/0&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>Defines a map of firewall rules that control external traffic to the public nodes. Each rule is
+defined as a map of key-value pairs and has to be assigned a unique name:</p>
+<ul>
+<li><code>from_port</code> (req.):  the lower part of the allowed port range, valid integer value needs to be between 1 and 65535.</li>
+<li><code>to_port</code> (req.): the higher part of the allowed port range, valid integer value needs to be between 1 and 65535.</li>
+<li><code>tag</code> (req.): instances with this tag will be assigned this firewall rule.</li>
+<li><code>ethertype</code> (opt. default: <code>"IPv4"</code>): the layer 3 protocol type (<code>"IPv4"</code> or <code>"IPv6"</code>).</li>
+<li><code>protocol</code> (opt. default: <code>"tcp"</code>): the layer 4 protocol type.</li>
+<li><code>cidr</code> (opt. default: <code>"0.0.0.0/0"</code>): the remote CIDR, the value needs to be a valid CIDR (i.e. <code>192.168.0.0/16</code>).</li>
+</ul>
+<p>If you would like Magic Castle to be able to transfer files and update the state of the cluster in Puppet, make
+sure there exists at least one effective firewall rule where <code>from_port &lt;= 22 &lt;= to_port</code> and for which the external
+IP address of the machine that executes Terraform is in the CIDR range (i.e: <code>cidr = "0.0.0.0/0"</code> being the most
+permissive). This corresponds to the <code>ssh</code> rule in the default firewall rule map.
+This guarantees that Terraform will be able to use SSH to connect to the cluster from anywhere. For more information
+about this requirement, refer to Magic Castle's
+<a href="https://github.com/ComputeCanada/magic_castle/blob/main/common/design/main.tf#L58">bastion tag computation code</a>.</p>
+<p><strong>Post build modification effect</strong>: modify the cloud provider firewall rules at next <code>terraform apply</code>.</p>
+<h3 id="418-software_stack-optional">4.18 software_stack (optional)</h3>
+<p><strong>default_value</strong>: <code>"alliance"</code></p>
+<p>Defines the scientific software environment that users have access when they login.
+Possible values are:</p>
+<ul>
+<li><strong>default</strong> - <code>"alliance"</code> / <code>"computecanada"</code>: <a href="https://docs.alliancecan.ca/wiki/Accessing_CVMFS">Digital Alliance Research Alliance of Canada scientific software environment</a> (previously Compute Canada environment)</li>
+<li><code>"eessi"</code>: <a href="https://eessi.github.io/docs/">European Environment for Scientific Software Installation (EESSI)</a></li>
+<li><code>null</code> / <code>""</code>: no scientific software environment</li>
+</ul>
+<p><strong>Post build modification effect</strong>: trigger scp of hieradata files at next <code>terraform apply</code>.</p>
+<h3 id="419-pool-optional">4.19 pool (optional)</h3>
+<p><strong>default_value</strong>: <code>[]</code></p>
+<p>Defines a list of hostnames with the tag <code>"pool"</code> that have to be online. This variable is typically
+managed by the workload scheduler through Terraform API. For more information, refer to
+<a href="terraform_cloud/#enable-magic-castle-autoscaling">Enable Magic Castle Autoscaling</a></p>
+<p><strong>Post build modification effect</strong>: <code>pool</code> tagged hosts with name present in the list
+will be instantiated, others will stay uninstantiated or will be destroyed
+if previously instantiated.</p>
+<h3 id="420-skip_upgrade-optional">4.20 skip_upgrade (optional)</h3>
+<p><strong>default_value</strong> = <code>false</code></p>
+<p>If true, the base image packages will not be upgraded during the first boot. By default,
+all packages are upgraded.</p>
+<p><strong>Post build modification effect</strong>: No effect on currently built instances. Ones created
+after the modification will take into consideration the new value of the parameter to determine
+whether they should upgrade the base image packages or not.</p>
+<h3 id="421-puppetfile-optional">4.21 puppetfile (optional)</h3>
+<p><strong>default_value</strong> = <code>""</code></p>
+<p>Defines a second <a href="https://www.puppet.com/docs/pe/2023.2/puppetfile.html">Puppetfile</a> used to
+install complementary modules with <a href="https://github.com/puppetlabs/r10k">r10k</a>.</p>
+<p><strong>Post build modification effect</strong>: trigger scp of Puppetfile at next <code>terraform apply</code>.
+Each instance's Puppet agent will be reloaded following the installation of the new modules.</p>
+<h3 id="422-bastion_tags-optional">4.22 bastion_tags (optional)</h3>
+<p><strong>default_value</strong> = <code>[]</code></p>
+<p>Defines a list of tags identifying instances that can be used by Terraform as the first hop
+to transfer files to the Puppet server. By default, this list is infered from the list of
+<a href="#416-firewall_rules-optional">firewall rules</a> and the public ip address of the agent calling
+<code>terraform apply</code>. Providing an explicit list of tags allow to bypass the firewall rule inference,
+which can be useful when the agent is in the same network as the cluster.</p>
+<h2 id="5-cloud-specific-configuration">5. Cloud Specific Configuration</h2>
+<h3 id="51-amazon-web-services">5.1 Amazon Web Services</h3>
+<h4 id="511-region">5.1.1 region</h4>
+<p>Defines the label of the AWS EC2 region where the cluster will be created (i.e.: <code>us-east-2</code>).</p>
+<p><strong>Requirement</strong>: Must be in the <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-available-regions">list of available EC2 regions</a>.</p>
+<p><strong>Post build modification effect</strong>: rebuild of all resources at next <code>terraform apply</code>.</p>
+<h4 id="512-availability_zone-optional">5.1.2 availability_zone (optional)</h4>
+<p><strong>default value</strong>: None</p>
+<p>Defines the label of the data center inside the AWS region where the cluster will be created (i.e.: <code>us-east-2a</code>).
+If left blank, it chosen at random amongst the availability zones of the selected region.</p>
+<p><strong>Requirement</strong>: Must be in a valid availability zone for the selected region. Refer to
+<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#using-regions-availability-zones-describe">AWS documentation</a>
+to find out how list the availability zones.</p>
+<h3 id="52-microsoft-azure">5.2 Microsoft Azure</h3>
+<h4 id="521-location">5.2.1 location</h4>
+<p>Defines the label of the Azure location where the cluster will be created (i.e.: <code>eastus</code>).</p>
+<p><strong>Requirement</strong>: Must be a valid Azure location. To get the list of available location, you can
+use Azure CLI : <code>az account list-locations -o table</code>.</p>
+<p><strong>Post build modification effect</strong>: rebuild of all resources at next <code>terraform apply</code>.</p>
+<h4 id="522-azure_resource_group-optional">5.2.2 azure_resource_group (optional)</h4>
+<p><strong>default value</strong>: None</p>
+<p>Defines the name of an already created resource group to use. Terraform
+will no longer attempt to manage a resource group for Magic Castle if
+this variable is defined and will instead create all resources within
+the provided resource group. Define this if you wish to use an already
+created resource group or you do not have a subscription-level access to
+create and destroy resource groups.</p>
+<p><strong>Post build modification effect</strong>: rebuild of all instances at next <code>terraform apply</code>.</p>
+<h4 id="523-plan-optional">5.2.3 plan (optional)</h4>
+<p><strong>default value</strong>:
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="na">name</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="kt">null</span>
+<span class="w">  </span><span class="na">product</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="kt">null</span>
+<span class="w">  </span><span class="na">publisher</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">null</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>Purchase plan information for Azure Marketplace image. Certain images from Azure Marketplace
+requires a terms acceptance or a fee to be used. When using this kind of image, you must supply
+the plan details.</p>
+<p>For example, to use the official <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux-x86_64?tab=Overview">AlmaLinux image</a>, you have to first add it to your
+account. Then to use it with Magic Castle, you must supply the following plan information:
+<div class="highlight"><pre><span></span><code>plan = {
+  name      = &quot;8_7&quot;
+  product   = &quot;almalinux&quot;
+  publisher = &quot;almalinux&quot;
+}
+</code></pre></div></p>
+<h3 id="53-google-cloud">5.3 Google Cloud</h3>
+<h4 id="531-project">5.3.1 project</h4>
+<p>Defines the label of the unique identifier associated with the Google Cloud project in which the resources will be created.
+It needs to corresponds to GCP project ID, which is composed of the project name and a randomly
+assigned number.</p>
+<p><strong>Requirement</strong>: Must be a valid Google Cloud project ID.</p>
+<p><strong>Post build modification effect</strong>: rebuild of all resources at next <code>terraform apply</code>.</p>
+<h4 id="532-region">5.3.2 region</h4>
+<p>Defines the name of the specific geographical location where the cluster resources will be hosted.</p>
+<p><strong>Requirement</strong>: Must be a valid Google Cloud region. Refer to <a href="https://cloud.google.com/compute/docs/regions-zones#available">Google Cloud documentation</a>
+for the list of available regions and their characteristics.</p>
+<h4 id="533-zone-optional">5.3.3 zone (optional)</h4>
+<p><strong>default value</strong>: None</p>
+<p>Defines the name of the zone within the region where the cluster resources will be hosted.</p>
+<p><strong>Requirement</strong>: Must be a valid Google Cloud zone. Refer to <a href="https://cloud.google.com/compute/docs/regions-zones#available">Google Cloud documentation</a>
+for the list of available zones and their characteristics.</p>
+<h3 id="54-openstack-and-ovh">5.4 OpenStack and OVH</h3>
+<h4 id="541-os_floating_ips-optional">5.4.1 os_floating_ips (optional)</h4>
+<p><strong>default value</strong>: <code>{}</code></p>
+<p>Defines a map as an association of instance names (key) to
+pre-allocated floating ip addresses (value). Example:
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nb">os_floating_ips</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="na">login1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;132.213.13.59&quot;</span>
+<span class="w">    </span><span class="na">login2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;132.213.13.25&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+</code></pre></div></p>
+<ul>
+<li>instances tagged as public that have an entry in this map will be assigned
+the corresponding ip address;</li>
+<li>instances tagged as public that do not have an entry in this map will be assigned
+a floating ip managed by Terraform.</li>
+<li>instances not tagged as public that have an entry in this map will
+not be assigned a floating ip.</li>
+</ul>
+<p>This variable can be useful if you manage your DNS manually and
+you would like the keep the same domain name for your cluster at each
+build.</p>
+<p><strong>Post build modification effect</strong>: change the floating ips assigned
+to the public instances.</p>
+<h4 id="542-os_ext_network-optional">5.4.2 os_ext_network (optional)</h4>
+<p><strong>default value</strong>: None</p>
+<p>Defines the name of the external network that provides the floating
+ips. Define this only if your OpenStack cloud provides multiple
+external networks, otherwise, Terraform can find it automatically.</p>
+<p><strong>Post build modification effect</strong>: change the floating ips assigned to the public nodes.</p>
+<h4 id="544-subnet_id-optional">5.4.4 subnet_id (optional)</h4>
+<p><strong>default value</strong>: None</p>
+<p>Defines the ID of the internal IPV4 subnet to which the instances are
+connected. Define this if you have or intend to have more than one
+subnets defined in your OpenStack project. Otherwise, Terraform can
+find it automatically. Can be used to force a v4 subnet when both v4 and v6 exist.</p>
+<p><strong>Post build modification effect</strong>: rebuild of all instances at next <code>terraform apply</code>.</p>
+<h3 id="55-incus">5.5 Incus</h3>
+<h4 id="forward_proxy-optional">forward_proxy (optional)</h4>
+<p><strong>default value</strong>: false</p>
+<p>When enabled, the network connections for ports with the <code>proxy</code> tags in firewall rules
+are forwarded between the incus host and the proxy instance. To do so, an
+<a href="https://linuxcontainers.org/incus/docs/main/reference/devices_proxy/">incus proxy device</a>
+is added to the instance for each port.</p>
+<p>This setting can be enabled on at most one cluster per incus host.</p>
+<p><strong>Post build modification effect</strong>: add or remove devices forwarding proxy ports.</p>
+<h3 id="privileged-optional">privileged (optional)</h3>
+<p><strong>default value</strong>: true</p>
+<p>By default, the LXC containers created by Magic Castle are privileged. It is possible for security reasons
+to turn this off by provider <code>privileged = false</code> to the Incus module. However, due to kernel restrictions
+designed to prevent unprivileged users from performing privileged operations like initiating mounts,
+the following features have to be disabled when running with <code>privileged = false</code>:
+- NFS server and mounts (<code>profile::nfs</code>)</p>
+<p><strong>Post build modification effect</strong>: rebuild of all instances at next <code>terraform apply</code>.</p>
+<h3 id="shared_filesystems-optional">shared_filesystems (optional)</h3>
+<p><strong>default value</strong>: <code>[]</code></p>
+<p>This creates a filesystem for every entry in the list and mount that filesystem in every instance under
+<code>/${filesystem.name}</code>. For example, <code>shared_filesystems = ["home"]</code> will create a home filesystem and
+mount it under <code>/home</code> in every instance. This is useful when working with unprivileged containers where
+NFS mount does not work.</p>
+<p><strong>Post build modification effect</strong>: create/destroy the filesystem and mount/unmount it in every instance.</p>
+<h3 id="storage_pool-optional">storage_pool (optional)</h3>
+<p><strong>default value</strong>: <code>"default"</code></p>
+<p>Indicate the name of the <a href="https://linuxcontainers.org/incus/docs/main/howto/storage_pools/">Incus storage pool</a>
+that will be used to create the instance root disk and the shared filesystems.</p>
+<p><strong>Post build modification effect</strong>: rebuild all instance and filesystems.</p>
+<h3 id="network_type-optional">network_type (optional)</h3>
+<p><strong>default value</strong>: <code>"bridge"</code></p>
+<p>Indicates the type of <a href="https://linuxcontainers.org/incus/docs/main/howto/network_create/#network-types">Incus network</a>.
+For OVN, the host must support the OVN network.</p>
+<p><strong>Possible values</strong>: 'ovn' or 'bridge'</p>
+<h3 id="ovn_uplink_network-optional">ovn_uplink_network (optional)</h3>
+<p><strong>default value</strong>: <code>"UPLINK"</code></p>
+<p><a href="https://linuxcontainers.org/incus/docs/main/howto/network_ovn_setup/#set-up-an-incus-cluster-on-ovn">Uplink bridge network</a> configured with the <code>ipv4.ovn.ranges</code> option.</p>
+<p><strong>Only used for OVN network</strong></p>
+<h2 id="6-dns-configuration">6. DNS Configuration</h2>
+<p>Some functionalities in Magic Castle require the registration of DNS records under the
+<a href="#44-cluster_name">cluster name</a> in the selected <a href="#45-domain">domain</a>. This includes
+web services like JupyterHub, Mokey and FreeIPA web portal.</p>
+<p>If your domain DNS records are managed by one of the supported providers,
+follow the instructions in the corresponding sections to have the cluster's
+DNS records created and tracked by Magic Castle.</p>
+<p>If your DNS provider is not supported, you can manually create the records.
+Refer to the subsection <a href="#63-unsupported-providers">6.3</a> for more details.</p>
+<h3 id="61-cloudflare">6.1 Cloudflare</h3>
+<ol>
+<li>Uncomment the <code>dns</code> module for Cloudflare in your <code>main.tf</code>.</li>
+<li>Uncomment the <code>output "hostnames"</code> block.</li>
+<li>Download and install the Cloudflare Terraform module: <code>terraform init</code>.</li>
+<li>Export the environment variables <code>CLOUDFLARE_EMAIL</code> and <code>CLOUDFLARE_API_KEY</code>, where <code>CLOUDFLARE_EMAIL</code> is your Cloudflare account email address and <code>CLOUDFLARE_API_KEY</code> is your account Global API Key available in your <a href="https://dash.cloudflare.com/profile/api-tokens">Cloudflare profile</a>.</li>
+</ol>
+<h4 id="612-cloudflare-api-token">6.1.2 Cloudflare API Token</h4>
+<p>If you prefer using an API token instead of the global API key, you will need to configure a token with the following permissions using the <a href="https://dash.cloudflare.com/profile/api-tokens">Cloudflare API Token interface</a>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Section</th>
+<th style="text-align: left;">Subsection</th>
+<th style="text-align: left;">Permission</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Zone</td>
+<td style="text-align: left;">DNS</td>
+<td style="text-align: left;">Edit</td>
+</tr>
+</tbody>
+</table>
+<p>Instead of step 5, export only <code>CLOUDFLARE_API_TOKEN</code>, <code>CLOUDFLARE_ZONE_API_TOKEN</code>, and <code>CLOUDFLARE_DNS_API_TOKEN</code> equal to the API token generated previously.</p>
+<h3 id="62-google-cloud">6.2 Google Cloud</h3>
+<p><strong>requirement</strong>: Install the <a href="https://cloud.google.com/sdk/docs/downloads-interactive">Google Cloud SDK</a></p>
+<ol>
+<li>Login to your Google account with gcloud CLI : <code>gcloud auth application-default login</code></li>
+<li>Uncomment the <code>dns</code> module for Google Cloud in your <code>main.tf</code>.</li>
+<li>Uncomment the <code>output "hostnames"</code> block.</li>
+<li>In <code>main.tf</code>'s <code>dns</code> module, configure the variables <code>project</code> and <code>zone_name</code>
+with their respective values as defined by your Google Cloud project.</li>
+<li>Download and install the Google Cloud Terraform module: <code>terraform init</code>.</li>
+</ol>
+<h3 id="63-unsupported-providers">6.3 Unsupported providers</h3>
+<p>If your DNS provider is not currently supported by Magic Castle, you can create the DNS records manually.</p>
+<p>Magic Castle provides a module that creates a text file with the DNS records that can
+then be imported manually in your DNS zone. To use this module, add the following
+snippet to your <code>main.tf</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kr">module</span><span class="w"> </span><span class="nv">&quot;dns&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="na">source</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;./dns/txt&quot;</span>
+<span class="w">    </span><span class="na">name</span><span class="w">             </span><span class="o">=</span><span class="w"> </span><span class="nv">module.openstack.cluster_name</span>
+<span class="w">    </span><span class="na">domain</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="nv">module.openstack.domain</span>
+<span class="w">    </span><span class="na">public_instances</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">module.openstack.public_instances</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Find and replace <code>openstack</code> in the previous snippet by your cloud provider of choice
+if not OpenStack (i.e: <code>aws</code>, <code>gcp</code>, etc.).</p>
+<p>The file will be created after the <code>terraform apply</code> in the same folder as your <code>main.tf</code>
+and will be named as <code>${name}.${domain}.txt</code>.</p>
+<h3 id="65-sshfp-records-and-dnssec">6.5 SSHFP records and DNSSEC</h3>
+<p>Magic Castle DNS module creates SSHFP records for all instances with a public ip address.
+These records can be used by SSH clients to verify the SSH host keys of the server.
+If <a href="https://developers.cloudflare.com/dns/dnssec/">DNSSEC</a>
+is enabled for the domain and the SSH client is correctly configured,
+no host key confirmation will be prompted when connecting to the server.</p>
+<p>For more information on how to activate DNSSEC, refer to your DNS provider documentation:</p>
+<ul>
+<li><a href="https://developers.cloudflare.com/dns/dnssec/#enable-dnssec">CloudFlare - Enable DNSSEC</a></li>
+<li><a href="https://cloud.google.com/dns/docs/dnssec-config#enabling">Google Cloud - Manage DNSSEC configuration</a></li>
+</ul>
+<p>To setup an SSH client to use SSHFP records, add
+<div class="highlight"><pre><span></span><code>VerifyHostKeyDNS yes
+</code></pre></div>
+to its configuration file (i.e.: <code>~/.ssh/config</code>).</p>
+<h3 id="66-dkim-record-optional">6.6 DKIM record (optional)</h3>
+<p>Magic Castle DNS module provides an optional input named <code>dkim_public_key</code> that enables
+the creation of a <a href="https://www.cloudflare.com/learning/dns/dns-records/dns-dkim-record/">DNS DKIM record</a>
+that can be used to verify authenticity of emails sent from the cluster.</p>
+<p>The DKIM key can be generated with Terraform and the public key supplied to
+Magic Castle DNS module like this:</p>
+<div class="highlight"><pre><span></span><code><span class="kr">resource</span><span class="w"> </span><span class="nc">&quot;tls_private_key&quot;</span><span class="w"> </span><span class="nv">&quot;dkim_key&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">algorithm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;RSA&quot;</span>
+<span class="w">  </span><span class="na">rsa_bits</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="m">2048</span>
+<span class="p">}</span>
+
+<span class="kr">module</span><span class="w"> </span><span class="nv">&quot;dns&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">source</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;git::https://github.com/ComputeCanada/magic_castle.git//dns/cloudflare&quot;</span>
+<span class="w">  </span><span class="na">name</span><span class="w">             </span><span class="o">=</span><span class="w"> </span><span class="nv">module.openstack.cluster_name</span>
+<span class="w">  </span><span class="na">domain</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="nv">module.openstack.domain</span>
+<span class="w">  </span><span class="na">public_instances</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">module.openstack.public_instances</span>
+<span class="w">  </span><span class="na">dkim_public_key</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nv">tls_private_key.dkim_key.public_key_pem</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>The public and private key can also be generated with openssl command-line and supplied
+to the DNS module like this:
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>openssl<span class="w"> </span>genrsa<span class="w"> </span>-out<span class="w"> </span>dkim_private.pem
+$<span class="w"> </span>openssl<span class="w"> </span>rsa<span class="w"> </span>-in<span class="w"> </span>dkim_private.pem<span class="w"> </span>-pubout<span class="w"> </span>-out<span class="w"> </span>dkim_public.pem
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kr">module</span><span class="w"> </span><span class="nv">&quot;dns&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">source</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;git::https://github.com/ComputeCanada/magic_castle.git//dns/cloudflare&quot;</span>
+<span class="w">  </span><span class="na">name</span><span class="w">             </span><span class="o">=</span><span class="w"> </span><span class="nv">module.openstack.cluster_name</span>
+<span class="w">  </span><span class="na">domain</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="nv">module.openstack.domain</span>
+<span class="w">  </span><span class="na">public_instances</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">module.openstack.public_instances</span>
+<span class="w">  </span><span class="na">dkim_public_key</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nf">file</span><span class="p">(</span><span class="s2">&quot;dkim_public.pem&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>The private half of the generated key should be <a href="#4152-encrypting-sensitive-properties">encrypted</a>
+and provided to Puppet through the <a href="#413-hieradata-optional">hieradata variable</a>
+of the Magic Castle cloud provider module.</p>
+<h2 id="7-planning">7. Planning</h2>
+<p>Once your initial cluster configuration is done, you can initiate
+a planning phase where you will ask Terraform to communicate with
+your cloud provider and verify that your cluster can be built as it is
+described by the <code>main.tf</code> configuration file.</p>
+<p>Terraform should now be able to communicate with your cloud provider.
+To test your configuration file, enter the following command
+<div class="highlight"><pre><span></span><code>terraform plan -out tfplan
+</code></pre></div></p>
+<p>This command will validate the syntax of your configuration file and
+communicate with the provider, but it will not create new resources. It
+is only a dry-run. If Terraform does not report any error, you can move
+to the next step. Otherwise, read the errors and fix your configuration
+file accordingly.</p>
+<h3 id="71-scanning-plan-for-misconfiguration-optional">7.1 Scanning plan for misconfiguration (optional)</h3>
+<p><a href="https://trivy.dev/latest/">Trivy</a> is an open source security scanner
+that scans Terraform files (code and plan) and reports about potential issues.
+Magic Castle development team has integrated Trivy in its
+<a href="https://github.com/ComputeCanada/magic_castle/blob/main/.github/workflows/trivy_scan.yaml">CI/CD pipeline</a>
+to prevent misconfiguration and security issues that could be introduced
+by commits or a pull-requests. You too can use Trivy to verify your Terraform plan
+before applying it.</p>
+<p>After <a href="https://trivy.dev/latest/getting-started/">installing Trivy</a>, you can
+scan the Terraform plan produced in section 7, like this:
+<div class="highlight"><pre><span></span><code>trivy conf tfplan
+</code></pre></div></p>
+<p>Trivy then produces a report about configuration issues like this:
+<div class="highlight"><pre><span></span><code><span class="go">AVD-OPNSTK-0003 (MEDIUM): Security group rule allows ingress to multiple public addresses.</span>
+<span class="go">═════════════════════════════════════════════════════════════════════════</span>
+<span class="go">Opening up ports to the public internet is generally to be avoided. You should</span>
+<span class="go">restrict access to IP addresses or ranges that explicitly require it where possible.</span>
+
+<span class="go">See https://avd.aquasec.com/misconfig/avd-opnstk-0003</span>
+<span class="go">─────────────────────────────────────────────────────────────────────────</span>
+<span class="go"> ./openstack/openstack/network-2.tf:53</span>
+<span class="go">   via ./openstack/openstack/network-2.tf:45-56 (openstack_networking_secgroup_rule_v2.rule[&quot;ssh&quot;])</span>
+<span class="go">    via main.tf:10-44 (module.openstack)</span>
+<span class="go">─────────────────────────────────────────────────────────────────────────</span>
+<span class="go">  45   resource openstack_networking_secgroup_rule_v2 &quot;rule&quot; {</span>
+<span class="go">  ..</span>
+<span class="go">  53 [   remote_ip_prefix  = each.value.cidr</span>
+<span class="go">  ..</span>
+<span class="go">  56   }</span>
+<span class="go">─────────────────────────────────────────────────────────────────────────</span>
+</code></pre></div></p>
+<p>The most common configuration issues identified by Trivy in Magic Castle plans
+(illustrated in the previous output example), are firewall rules allowing access to port from
+public internet. If you know which IP addresses should have access to the cluster,
+you can harden the firewall rules. Refer to section <a href="#416-firewall_rules-optional">4.16 firewall_rules</a>
+for more information.</p>
+<h2 id="8-deployment">8. Deployment</h2>
+<p>To create the resources defined by your main, enter the following command
+<div class="highlight"><pre><span></span><code>terraform apply
+</code></pre></div></p>
+<p>The command will produce the same output as the <code>plan</code> command, but after
+the output it will ask for a confirmation to perform the proposed actions.
+Enter <code>yes</code>.</p>
+<p>Terraform will then proceed to create the resources defined by the
+configuration file. It should take a few minutes. Once the creation process
+is completed, Terraform will output the guest account usernames and password,
+the sudoer username and the floating ip of the login
+node.</p>
+<p><strong>Warning</strong>: although the instance creation process is finished once Terraform
+outputs the connection information, you will not be able to
+connect and use the cluster immediately. The instance creation is only the
+first phase of the cluster-building process. The configuration: the
+creation of the user accounts, installation of FreeIPA, Slurm, configuration
+of JupyterHub, etc.; takes around 15 minutes after the instances are created.</p>
+<p>Once it is booted, you can follow an instance configuration process by looking at:</p>
+<ul>
+<li><code>/var/log/cloud-init-output.log</code></li>
+<li><code>journalctl -u puppet</code></li>
+</ul>
+<p>If unexpected problems occur during configuration, you can provide these
+logs to the authors of Magic Castle to help you debug.</p>
+<h3 id="81-deployment-customization">8.1 Deployment Customization</h3>
+<p>You can modify the <code>main.tf</code> at any point of your cluster's life and
+apply the modifications while it is running.</p>
+<p><strong>Warning</strong>: Depending on the variables you modify, Terraform might destroy
+some or all resources, and create new ones. The effects of modifying each
+variable are detailed in the subsections of <strong>Configuration</strong>.</p>
+<p>For example, to increase the number of computes nodes by one. Open
+<code>main.tf</code>, add 1 to <code>node</code>'s <code>count</code> , save the document and call
+<div class="highlight"><pre><span></span><code>terraform apply
+</code></pre></div></p>
+<p>Terraform will analyze the difference between the current state and
+the future state, and plan the creation of a single new instance. If
+you accept the action plan, the instance will be created, provisioned
+and eventually automatically add to the Slurm cluster configuration.</p>
+<p>You could do the opposite and reduce the number of compute nodes to 0.</p>
+<h2 id="9-destruction">9. Destruction</h2>
+<p>Once you're done working with your cluster and you would like to recover
+the resources, in the same folder as <code>main.tf</code>, enter:
+<div class="highlight"><pre><span></span><code>terraform destroy -refresh=false
+</code></pre></div></p>
+<p>The <code>-refresh=false</code> flag is to avoid an issue where one or many of the data
+sources return no results and stall the cluster destruction with a message like
+the following:
+<div class="highlight"><pre><span></span><code>Error: Your query returned no results. Please change your search criteria and try again.
+</code></pre></div>
+This type of error happens when for example the specified <a href="#46-image">image</a>
+no longer exists (see <a href="https://github.com/ComputeCanada/magic_castle/issues/40">issue #40</a>).</p>
+<p>As for <code>apply</code>, Terraform will output a plan that you will have to confirm
+by entering <code>yes</code>.</p>
+<p><strong>Warning</strong>: once the cluster is destroyed, nothing will be left, even the
+shared storage will be erased.</p>
+<h3 id="91-instance-destruction">9.1 Instance Destruction</h3>
+<p>It is possible to destroy only the instances and keep the rest of the infrastructure
+like the floating ip, the volumes, the generated SSH host key, etc. To do so, set
+the count value of the instance type you wish to destroy to 0.</p>
+<h3 id="92-instance-replacement">9.2 Instance Replacement</h3>
+<p>On some occasions, it is desirable to rebuild some of the instances from scratch.
+Using the <code>-replace</code> option of <code>terraform apply</code>, you can designate resources
+that will be rebuilt at next application of the plan.</p>
+<p>For example, to rebuild the first login node :
+<div class="highlight"><pre><span></span><code>terraform apply -replace=&#39;module.openstack.openstack_compute_instance_v2.instances[&quot;login1&quot;]&#39;
+</code></pre></div></p>
+<h2 id="10-customize-cluster-software-configuration">10. Customize Cluster Software Configuration</h2>
+<p>Once the cluster is online and configured, you can modify its configuration as you see fit.
+We list here how to do most commonly asked for customizations.</p>
+<p>Some customizations are done from the Puppet server instance (<code>puppet</code>).
+To connect to the puppet server, follow these steps:</p>
+<ol>
+<li>Make sure your SSH key is loaded in your ssh-agent.</li>
+<li>SSH in your cluster with forwarding of the authentication
+agent connection enabled: <code>ssh -A centos@cluster_ip</code>.
+Replace <code>centos</code> by the value of <code>sudoer_username</code> if it is
+different.</li>
+<li>SSH in the Puppet server instance: <code>ssh puppet</code></li>
+</ol>
+<p><strong>Note on Google Cloud</strong>: In GCP, <a href="https://cloud.google.com/compute/docs/instances/managing-instance-access">OS Login</a>
+lets you use Compute Engine IAM roles to manage SSH access to Linux instances.
+This feature is incompatible with Magic Castle. Therefore, it is turned off in
+the instances metadata (<code>enable-oslogin="FALSE"</code>). The only account with sudoer rights
+that can log in the cluster is configured by the variable <code>sudoer_username</code>
+(default: <code>centos</code>).</p>
+<h3 id="101-disable-puppet">10.1 Disable Puppet</h3>
+<p>If you plan to modify configuration files manually, you will need to disable
+Puppet. Otherwise, you might find out that your modifications have disappeared
+in a 30-minute window.</p>
+<p>Puppet executes a run every 30 minutes and at reboot. To disable puppet:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>puppet<span class="w"> </span>agent<span class="w"> </span>--disable<span class="w"> </span><span class="s2">&quot;&lt;MESSAGE&gt;&quot;</span>
+</code></pre></div></p>
+<h3 id="102-replace-the-guest-account-password">10.2 Replace the Guest Account Password</h3>
+<p>Refer to section <a href="#411-guest_passwd-optional">4.11</a>.</p>
+<h3 id="103-add-ldap-users">10.3 Add LDAP Users</h3>
+<p>Users can be added to Magic Castle LDAP database (FreeIPA) with either one of
+the following methods: hieradata, command-line, and Mokey web-portal. Each
+method is presented in the following subsections.</p>
+<p>New LDAP users are automatically assigned a home folder on NFS.</p>
+<p>Magic Castle determines if an LDAP user should be member of a Slurm account
+based on its POSIX groups. When a user is added to a POSIX group, a daemon
+try to match the group name to the following regular expression:
+<div class="highlight"><pre><span></span><code>(ctb|def|rpp|rrg)-[a-z0-9_-]*
+</code></pre></div></p>
+<p>If there is a match, the user will be added to a Slurm account with the same
+name, and will gain access to the corresponding project folder under <code>/project</code>.</p>
+<p><strong>Note</strong>: The regular expression represents how Compute Canada names its resources
+allocation. The regular expression can be redefined, see
+<a href="https://github.com/ComputeCanada/puppet-magic_castle/#profileaccounts"><code>profile::accounts:::project_regex</code></a></p>
+<h4 id="1031-hieradata">10.3.1 hieradata</h4>
+<p>Using the <a href="#413-hieradata-optional">hieradata variable</a> in the <code>main.tf</code>, it is possible to define LDAP users.</p>
+<p>Examples of LDAP user definition with hieradata are provided in
+<a href="https://github.com/computecanada/puppet-magic_castle#profileusersldapusers">puppet-magic_castle documentation</a>.</p>
+<h4 id="1032-command-line">10.3.2 Command-Line</h4>
+<p>To add a user account after the cluster is built, log in <code>mgmt1</code> and call:</p>
+<div class="highlight"><pre><span></span><code>kinit<span class="w"> </span>admin
+<span class="nv">IPA_GUEST_PASSWD</span><span class="o">=</span>&lt;new_user_passwd&gt;<span class="w"> </span>/sbin/ipa_create_user.py<span class="w"> </span>&lt;username&gt;<span class="w"> </span><span class="o">[</span>--group<span class="w"> </span>&lt;group_name&gt;<span class="o">]</span>
+kdestroy
+</code></pre></div>
+<details>
+
+<summary>Tips on using command-line to configure FreeIPA</summary>
+
+1. Once connected to a login node, access `mgmt1` with `[centos@login1 ~]$ ssh mgmt1`.
+2. Retrieve the `profile::freeipa::server::admin_password` encrypted value following instructions in section [10.13](#1013-read-and-edit-secret-values-generated-at-boot) (you only need the value in between '[...]' brackets).
+3. Log in to FreeIPA with `kinit admin` using the password retrieved in step 2.
+4. The `ipa` command now is available to accomplish administrator tasks, here's a [detailed guide](https://www.freeipa.org/page/Administrators_Guide.html).
+
+</details>
+
+<h4 id="1033-mokey">10.3.3 Mokey</h4>
+<p>If user sign-up with Mokey is enabled, users can create their own account at
+<div class="highlight"><pre><span></span><code>https://mokey.yourcluster.domain.tld/auth/signup
+</code></pre></div></p>
+<p>It is possible that an administrator is required to enable the account with Mokey. You can
+access the administrative panel of FreeIPA at :
+<div class="highlight"><pre><span></span><code>https://ipa.yourcluster.domain.tld/
+</code></pre></div></p>
+<p>The FreeIPA administrator credentials can be retrieved from an encrypted file
+on the Puppet server. Refer to section <a href="#1013-read-and-edit-secret-values-generated-at-boot">10.13</a>
+to know how.</p>
+<h3 id="104-increase-the-number-of-guest-accounts">10.4 Increase the Number of Guest Accounts</h3>
+<p>To increase the number of guest accounts after creating the cluster with Terraform,
+simply increase the value of <code>nb_users</code>, then call :
+<div class="highlight"><pre><span></span><code>terraform apply
+</code></pre></div></p>
+<p>Each instance's Puppet agent will be reloaded following the copy of the hieradata files,
+and the new accounts will be created.</p>
+<h3 id="105-restrict-ssh-access">10.5 Restrict SSH Access</h3>
+<p>By default, instances tagged <code>login</code> have their port 22 opened to entire world.
+If you know the range of ip addresses that will connect to your cluster,
+we strongly recommend that you limit the access to port 22 to this range.</p>
+<p>To limit the access to port 22, refer to <a href="#416-firewall_rules-optional">section 4.16 firewall_rules</a>,
+and replace the <code>cidr</code> of the <code>ssh</code> rule to match the range of ip addresses that
+have be the allowed to connect to the cluster. If there are more than one range, create multiple rules
+with distinct names.</p>
+<h3 id="106-add-packages-to-jupyter-default-python-kernel">10.6 Add Packages to Jupyter Default Python Kernel</h3>
+<p>The default Python kernel corresponds to the Python installed in <code>/opt/ipython-kernel</code>.
+Each compute node has its own copy of the environment. To add packages to this
+environment, add the following lines to <code>hieradata</code> in <code>main.tf</code>:
+<div class="highlight"><pre><span></span><code><span class="nt">jupyterhub::kernel::venv::packages</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">package_A</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">package_B</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">package_C</span>
+</code></pre></div></p>
+<p>and replace <code>package_*</code> by the packages you need to install.
+Then call:
+<div class="highlight"><pre><span></span><code>terraform apply
+</code></pre></div></p>
+<h3 id="107-activate-globus-endpoint">10.7 Activate Globus Endpoint</h3>
+<p>No longer supported</p>
+<h3 id="108-recovering-from-puppet-rebuild">10.8 Recovering from puppet rebuild</h3>
+<p>The modifications of some of the parameters in the <code>main.tf</code> file can trigger the
+rebuild of the <code>puppet</code> instance. This instance hosts the Puppet Server on which
+depends the Puppet agent of the other instances. When <code>puppet</code> is rebuilt, the other
+Puppet agents cease to recognize Puppet Server identity since the Puppet Server
+identity and certificates have been regenerated.</p>
+<p>To fix the Puppet agents, you will need to apply the following commands on each
+instance other than <code>puppet</code> once <code>puppet</code> is rebuilt:
+<div class="highlight"><pre><span></span><code>sudo systemctl stop puppet
+sudo rm -rf /etc/puppetlabs/puppet/ssl/
+sudo systemctl start puppet
+</code></pre></div></p>
+<p>Then, on <code>puppet</code>, you will need to sign the new certificate requests made by the
+instances. First, you can list the requests:
+<div class="highlight"><pre><span></span><code>sudo /opt/puppetlabs/bin/puppetserver ca list
+</code></pre></div></p>
+<p>Then, if every instance is listed, you can sign all requests:
+<div class="highlight"><pre><span></span><code>sudo /opt/puppetlabs/bin/puppetserver ca sign --all
+</code></pre></div></p>
+<p>If you prefer, you can sign individual request by specifying their name:
+<div class="highlight"><pre><span></span><code>sudo /opt/puppetlabs/bin/puppetserver ca sign --certname NAME[,NAME]
+</code></pre></div></p>
+<h3 id="109-dealing-with-banned-ip-addresses-fail2ban">10.9 Dealing with banned ip addresses (fail2ban)</h3>
+<p>Login nodes run <a href="https://www.fail2ban.org/wiki/index.php/Main_Page">fail2ban</a>, an intrusion
+prevention software that protects login nodes from brute-force attacks. fail2ban is configured
+to ban ip addresses that attempted to login 20 times and failed in a window of 60 minutes. The
+ban time is 24 hours.</p>
+<p>In the context of a workshop with SSH novices, the 20-attempt rule might be triggered,
+resulting in participants banned and puzzled, which is a bad start for a workshop. There are
+solutions to mitigate this problem.</p>
+<h4 id="1091-define-a-list-of-ip-addresses-that-can-never-be-banned">10.9.1 Define a list of ip addresses that can never be banned</h4>
+<p>fail2ban keeps a list of ip addresses that are allowed to fail to login without risking jail
+time. To add an ip address to that list,  add the following lines
+to the variable <code>hieradata</code> in <code>main.tf</code>:
+<div class="highlight"><pre><span></span><code><span class="nt">profile::fail2ban::ignoreip</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">x.x.x.x</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">y.y.y.y</span>
+</code></pre></div>
+where <code>x.x.x.x</code> and <code>y.y.y.y</code> are ip addresses you want to add to the ignore list.
+The ip addresses can be written using CIDR notations.
+The ignore ip list on Magic Castle already includes <code>127.0.0.1/8</code> and the cluster subnet CIDR.</p>
+<p>Once the line is added, call:
+<div class="highlight"><pre><span></span><code>terraform apply
+</code></pre></div></p>
+<h4 id="1092-remove-fail2ban-ssh-route-jail">10.9.2 Remove fail2ban ssh-route jail</h4>
+<p>fail2ban rule that banned ip addresses that failed to connect
+with SSH can be disabled. To do so, add the following line
+to the variable <code>hieradata</code> in <code>main.tf</code>:
+<div class="highlight"><pre><span></span><code><span class="nt">fail2ban::jails</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&#39;ssh-ban-root&#39;</span><span class="p p-Indicator">]</span>
+</code></pre></div>
+This will keep the jail that automatically ban any ip that tries to
+login as root, and remove the ssh failed password jail.</p>
+<p>Once the line is added, call:
+<div class="highlight"><pre><span></span><code>terraform apply
+</code></pre></div></p>
+<h4 id="1093-unban-ip-addresses">10.9.3 Unban ip addresses</h4>
+<p>fail2ban ban ip addresses by adding rules to iptables. To remove these rules, you need to
+tell fail2ban to unban the ips.</p>
+<p>To list the ip addresses that are banned, execute the following command:
+<div class="highlight"><pre><span></span><code>sudo fail2ban-client status ssh-route
+</code></pre></div></p>
+<p>To unban ip addresses, enter the following command followed by the ip addresses you want to unban:
+<div class="highlight"><pre><span></span><code>sudo fail2ban-client set ssh-route unbanip
+</code></pre></div></p>
+<h4 id="1094-disable-fail2ban">10.9.4 Disable fail2ban</h4>
+<p>While this is not recommended, fail2ban can be completely disabled. To do so, add the following line
+to the variable <code>hieradata</code> in <code>main.tf</code>:
+<div class="highlight"><pre><span></span><code><span class="nt">fail2ban::service_ensure</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;stopped&#39;</span>
+</code></pre></div></p>
+<p>then call :
+<div class="highlight"><pre><span></span><code>terraform apply
+</code></pre></div></p>
+<h3 id="1011-set-selinux-in-permissive-mode">10.11 Set SELinux in permissive mode</h3>
+<p>SELinux can be set in permissive mode to debug new workflows that would be
+prevented by SELinux from working properly. To do so, add the following line
+to the variable <code>hieradata</code> in <code>main.tf</code>:
+<div class="highlight"><pre><span></span><code><span class="nt">selinux::mode</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;permissive&#39;</span>
+</code></pre></div></p>
+<h3 id="1012-create-a-compute-node-image">10.12 Create a compute node image</h3>
+<p>When scaling the compute node pool, either manually by changing the count or
+automatically with <a href="terraform_cloud/#enable-magic-castle-autoscaling">Slurm autoscale</a>,
+it can become beneficial to reduce the time spent configuring the machine
+when it boots for the first time, hence reducing the time requires before it becomes
+available in Slurm. One way to achieve this is to clone the root disk of a fully
+configured compute node and use it as the base image of future compute nodes.</p>
+<p>This process has three steps:</p>
+<ol>
+<li>Prepare the volume for image cloning</li>
+<li>Create the image</li>
+<li>Configure Magic Castle Terraform code to use the new image</li>
+</ol>
+<p>The following subsection explains how to accomplish each step.</p>
+<p><strong>Warning</strong>: While it will work in most cases, avoid reusing the compute node image of a
+previous deployment. The preparation steps cleans most
+of the deployment specific configuration and secrets, but there is no guarantee
+that the configuration will be entirely compatible with a different deployment.</p>
+<h4 id="10121-prepare-the-volume-for-cloning">10.12.1 Prepare the volume for cloning</h4>
+<p>The environment <a href="https://github.com/ComputeCanada/puppet-magic_castle/">puppet-magic_castle</a>
+installs a script that prepares the volume for cloning named
+<a href="https://github.com/ComputeCanada/puppet-magic_castle/blob/main/site/profile/files/base/prepare4image.sh"><code>prepare4image.sh</code></a>.</p>
+<p>To make sure a node is ready for cloning, open its puppet agent log and validate the
+catalog was successfully applied at least once:
+<div class="highlight"><pre><span></span><code>journalctl<span class="w"> </span>-u<span class="w"> </span>puppet<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;Applied catalog&quot;</span>
+</code></pre></div></p>
+<p>To prepare the volume for cloning, execute the following line while connected to the compute node:
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>/usr/sbin/prepare4image.sh
+</code></pre></div></p>
+<p>Be aware that, since it is preferable for the instance to be powered off when cloning its volume, the
+script halts the machine once it is completed. Therefore, after executing <code>prepare4image.sh</code>, you will
+be disconnected from the instance.</p>
+<p>The script <code>prepare4image.sh</code> executes the following steps in order:</p>
+<ol>
+<li>Stop and disable puppet agent</li>
+<li>Stop and disable slurm compute node daemon (<code>slurmd</code>)</li>
+<li>Stop and disable consul agent daemon</li>
+<li>Stop and disable consul-template daemon</li>
+<li>Unenroll the host from the IPA server</li>
+<li>Remove puppet agent configuration files in <code>/etc</code></li>
+<li>Remove consul agent identification files</li>
+<li>Unmount NFS directories</li>
+<li>Remove NFS directories <code>/etc/fstab</code></li>
+<li>Stop syslog</li>
+<li>Clear <code>/var/log/message</code> content</li>
+<li>Remove cloud-init's logs and artifacts so it can re-run</li>
+<li>Power off the machine</li>
+</ol>
+<p><strong>Warning</strong>: When using Incus, running <code>prepare4image.sh</code> on instance is an irreversible process.
+The script removes <code>/var/lib/cloud</code> which is only created when the instance is created. Therefore,
+to make the instance work properly again, you will either have to taint it or change its image
+attribute to the one you have just created.</p>
+<h4 id="10122-create-the-image">10.12.2 Create the image</h4>
+<p>Once the instance is powered off, access your cloud provider dashboard, find the instance
+and follow the provider's instructions to create the image.</p>
+<ul>
+<li><a href="https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/tkv-create-ami-from-instance.html">AWS</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/virtual-machines/capture-image-portal">Azure</a></li>
+<li><a href="https://cloud.google.com/compute/docs/machine-images/create-machine-images#create-image-from-instance">GCP</a></li>
+<li><a href="https://linuxcontainers.org/incus/docs/main/howto/images_create/">Incus</a></li>
+<li><a href="https://docs.openstack.org/horizon/latest/user/launch-instances.html#create-an-instance-snapshot">OpenStack</a></li>
+<li><a href="https://blog.ovhcloud.com/create-and-use-openstack-snapshots/">OVH</a></li>
+</ul>
+<p>Note down the name/id of the image you created, it will be needed during the next step.</p>
+<h4 id="10123-configure-magic-castle-terraform-code-to-use-the-new-image">10.12.3 Configure Magic Castle Terraform code to use the new image</h4>
+<p>Edit your <code>main.tf</code> and add <code>image = "name-or-id-of-your-image"</code> to the dictionary
+defining the instance. The instance previously powered off will be powered on and future
+non-instantiated machines will use the image at the next execution of <code>terraform apply</code>.</p>
+<p>If the cluster is composed of heterogeneous compute nodes, it is possible
+to create an image for each type of compute nodes. Here is an example with Google Cloud
+<div class="highlight"><pre><span></span><code><span class="nb">instances</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nb">mgmt</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="na">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;n2-standard-2&quot;, tags = [&quot;puppet&quot;, &quot;mgmt&quot;, &quot;nfs&quot;</span><span class="p">],</span><span class="w"> </span><span class="na">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="p">}</span>
+<span class="w">  </span><span class="nb">login</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="na">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;n2-standard-2&quot;, tags = [&quot;login&quot;, &quot;public&quot;, &quot;proxy&quot;</span><span class="p">],</span><span class="w"> </span><span class="na">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="p">}</span>
+<span class="w">  </span><span class="nb">node</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="na">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;n2-standard-2&quot;</span>
+<span class="w">    </span><span class="na">tags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;node&quot;, &quot;pool&quot;</span><span class="p">]</span>
+<span class="w">    </span><span class="na">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span>
+<span class="w">    </span><span class="na">image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;rocky-mc-cpu-node&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="nb">gpu</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="na">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;n1-standard-2&quot;</span>
+<span class="w">    </span><span class="na">tags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;node&quot;, &quot;pool&quot;</span><span class="p">]</span>
+<span class="w">    </span><span class="na">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span>
+<span class="w">    </span><span class="na">gpu_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;nvidia-tesla-t4&quot;</span>
+<span class="w">    </span><span class="na">gpu_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<span class="w">    </span><span class="na">image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;rocky-mc-gpu-node&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h3 id="1013-read-and-edit-secret-values-generated-at-boot">10.13 Read and edit secret values generated at boot</h3>
+<p>During the cloud-init initialization phase,
+<a href="https://github.com/ComputeCanada/puppet-magic_castle/blob/main/bootstrap.sh"><code>bootstrap.sh</code></a>
+script is executed. This script generates a set of encrypted secret values that are required
+by the Magic Castle Puppet environment:</p>
+<ul>
+<li><code>profile::consul::acl_api_token</code></li>
+<li><code>profile::freeipa::mokey::password</code></li>
+<li><code>profile::freeipa::server::admin_password</code></li>
+<li><code>profile::freeipa::server::ds_password</code></li>
+<li><code>profile::slurm::accounting::password</code></li>
+<li><code>profile::slurm::base::munge_key</code></li>
+</ul>
+<p>To read or change the value of one of these keys, use <code>eyaml edit</code> command
+on the <code>puppet</code> host, like this:
+<div class="highlight"><pre><span></span><code>sudo /opt/puppetlabs/puppet/bin/eyaml edit \
+  --pkcs7-private-key /etc/puppetlabs/puppet/eyaml/boot_private_key.pkcs7.pem \
+  --pkcs7-public-key /etc/puppetlabs/puppet/eyaml/boot_public_key.pkcs7.pem \
+  /etc/puppetlabs/code/environments/production/data/bootstrap.yaml
+</code></pre></div></p>
+<p>It is also possible to redefine the values of these keys by adding the key-value pair to
+the hieradata configuration file. Refer to section <a href="#413-hieradata-optional">4.13 hieradata</a>.
+User defined values take precedence over boot generated values in the Magic Castle
+Puppet data hierarchy.</p>
+<h3 id="1014-expand-a-volume">10.14 Expand a volume</h3>
+<p>Volumes defined in the <code>volumes</code> map can be expanded at will. To enable online extension of
+a volume, add <code>enable_resize = true</code> to its specs map. You can then increase the size at will.
+The corresponding volume will be expanded by the cloud provider and the filesystem will be
+extended by Puppet.</p>
+<h3 id="1015-access-prometheus-expression-browser">10.15 Access Prometheus' expression browser</h3>
+<p>Prometheus is an open-source systems monitoring and alerting toolkit. It is installed by default
+in Magic Castle. Every instance exposes their usage metrics and some services do to. To explore
+and visualize this data, it possible to access the <a href="https://prometheus.io/docs/visualization/browser/">expression browser</a>.</p>
+<p>From inside the cluster, it is typically available at <code>http://mgmt1:9090</code>. Given DNS is configured
+for your cluster, you can add the following snippet to your <a href="#413-hieradata-optional">hieradata</a>. to access the expression browser
+from Internet.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">lookup_options</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">profile::reverse_proxy::subdomains</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">merge</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;hash&#39;</span>
+<span class="nt">profile::reverse_proxy::subdomains</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">metrics</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;%{lookup(&#39;terraform.tag_ip.mgmt.0&#39;)}:9090&quot;</span>
+<span class="nt">profile::reverse_proxy::remote_ips</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">metrics</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&#39;&lt;REPLACE_BY_YOUR_OWN_IP&gt;&#39;</span><span class="p p-Indicator">]</span>
+</code></pre></div>
+<p>Prometheus will then be available at <code>http://metrics.your-cluster.yourdomain.tld/</code>.</p>
+<h2 id="11-customize-magic-castle-terraform-files">11. Customize Magic Castle Terraform Files</h2>
+<p>You can modify the Terraform module files in the folder named after your cloud
+provider (e.g: <code>gcp</code>, <code>openstack</code>, <code>aws</code>, etc.)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
