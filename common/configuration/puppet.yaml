@@ -65,7 +65,7 @@ runcmd:
   - systemctl daemon-reload
   - systemctl enable puppetserver
 # Install gem dependencies
-  - "/opt/puppetlabs/puppet/bin/gem install autosign:1.0.1 faraday:2.8.1 faraday-net_http:3.0.2 minitar:0.12.1 puppet_forge:5.0.4 r10k:4.1.0"
+  - "/opt/puppetlabs/puppet/bin/gem install autosign:1.0.1 faraday:2.8.1 faraday-net_http:3.0.2 fast_gettext:2.4.0 gettext-setup:1.1.0 minitar:0.12.1 puppet_forge:5.0.4 r10k:4.1.0"
   - curl -L -o /opt/puppetlabs/puppet/lib/ruby/vendor_gems/gems/hiera-eyaml-3.4.0/lib/hiera/backend/eyaml/encryptors/pkcs7.rb https://raw.githubusercontent.com/MagicCastle/hiera-eyaml/be1b85f508b3c1a2ce72ac85d093666f2eafb561/lib/hiera/backend/eyaml/encryptors/pkcs7.rb
 # Enable autosign with password
   - chgrp puppet /etc/autosign.conf
